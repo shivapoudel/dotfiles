@@ -17,6 +17,6 @@ cd ~/.dotfiles
 
 ## License ##
 
-Copyright (c) 2015 Shiva Poudel.
-Licensed under the MIT license.
+Copyright (c) 2015 Shiva Poudel.  
+Licensed under the MIT license.  
 <http://shivapoudel.mit-license.org/>
