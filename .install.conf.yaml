@@ -1,0 +1,12 @@
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
+    ~/.npmrc: npm/npmrc
+    ~/.vim: vim/vim
+    ~/.vimrc: vim/vimrc
+    ~/.wp: wp
+
+- shell:
+  - vim +PluginInstall +qall

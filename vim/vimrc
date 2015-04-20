@@ -1,0 +1,87 @@
+" Not vi compatible
+set nocompatible
+
+" ------------
+" Vim settings
+" ------------
+
+set showcmd
+set hidden
+set number
+set modelines=0
+set nomodeline
+set ruler
+set wildmode=list:full
+set undolevels=100
+set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam,*.pyc
+set encoding=utf-8
+set laststatus=2
+set t_Co=256
+set timeout
+set timeoutlen=500
+set ttimeoutlen=500
+set synmaxcol=512
+set ttyfast
+set scrolloff=5
+set backspace=indent,eol,start
+set autoindent
+
+" --------------------
+" Vundle configuration
+" --------------------
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" ---------------------
+" Plugins configuration
+" ---------------------
+
+" airline
+let g:airline_theme='wombat'
+
+" Emmet
+let g:user_emmet_leader_key='<C-Z>'
+
+" --------------
+" Vundle plugins
+" --------------
+
+" Vundle core
+Plugin 'gmarik/Vundle.vim'
+
+" itf_flat colorscheme
+Plugin 'cdmedia/itg_flat_vim'
+
+" Status Bar
+Plugin 'bling/vim-airline'
+
+" Editorconfig
+Plugin 'vim-scripts/PreserveNoEOL' " dependency
+Plugin 'editorconfig/editorconfig-vim'
+
+" Markdown
+Plugin 'tpope/vim-markdown'
+
+" Emmet
+Plugin 'mattn/emmet-vim'
+
+" Snippets
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+" ------------------------
+" Vundle end configuration
+" ------------------------
+
+call vundle#end()
+filetype plugin indent on
+
+" ---------------------
+" Setup the colorscheme
+" ---------------------
+
+silent! colorscheme itg_flat
