@@ -1,13 +1,15 @@
-# Dotfiles #
+Dotfiles
+========
 
-## Dependencies ##
+> This repository contains machine-specific configuration to accompany my dotfiles.
 
-* [GIT](http://git-scm.com/)
-* [SVN](https://subversion.apache.org/)
+After cloning this repo, run `install` to automatically set up the development
+environment. Note that the install script is idempotent: it can safely be run
+multiple times.
 
-## Install ##
+Dotfiles uses [Dotbot](https://github.com/anishathalye/dotbot) for installation.
 
-Run this:
+##### Install
 
 ```bash
 git clone git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
@@ -15,8 +17,9 @@ cd ~/.dotfiles
 ./install
 ```
 
-## License ##
+##### License
 
-Copyright (c) 2015 Shiva Poudel.  
-Licensed under the MIT license.  
+Copyright (c) 2015 Shiva Poudel.
+
+Licensed under the MIT license: 
 <http://shivapoudel.mit-license.org/>
