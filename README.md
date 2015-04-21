@@ -9,7 +9,8 @@ multiple times.
 
 Dotfiles uses [Dotbot](https://github.com/anishathalye/dotbot) for installation.
 
-##### Install
+Install
+-------
 
 ```bash
 git clone git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
@@ -17,7 +18,8 @@ cd ~/.dotfiles
 ./install
 ```
 
-##### License
+License
+-------
 
 Copyright (c) 2015 Shiva Poudel.
 
