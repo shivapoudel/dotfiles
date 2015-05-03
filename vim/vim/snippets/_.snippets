@@ -11,16 +11,13 @@ snippet editorconfig
 	insert_final_newline = true
 	trim_trailing_whitespace = true
 
-	[*.md]
-	trim_trailing_whitespace = false
-
 	[*.txt]
 	trim_trailing_whitespace = false
 
-	[*.json]
-	insert_final_newline = false
+	[*.{md,json,yml}]
+	trim_trailing_whitespace = false
+	indent_style = space
 	indent_size = 2
-	tab_width = 2
 snippet jshintrc
 	{
 		"boss": true,
