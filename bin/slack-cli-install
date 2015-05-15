@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Slack CLI Installer
-#
-
-curl -sS http://cleentfaar.github.io/slack-cli/installer | php
-chmod +x slack.phar
-mv slack.phar /usr/local/bin/slack
-echo @php '"%~dp0slack"' %* > /usr/local/bin/slack.bat
-slack --version
