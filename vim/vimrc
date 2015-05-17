@@ -25,6 +25,7 @@ set ttyfast
 set scrolloff=5
 set backspace=indent,eol,start
 set autoindent
+set shell=bash
 
 " --------------------
 " Vundle configuration
@@ -39,7 +40,7 @@ call vundle#begin()
 " ---------------------
 
 " airline
-let g:airline_theme='wombat'
+let g:airline_theme='dark'
 
 " Emmet
 let g:user_emmet_leader_key='<C-Z>'
@@ -55,7 +56,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'cdmedia/itg_flat_vim'
 
 " Status Bar
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 
 " Editorconfig
 Plugin 'vim-scripts/PreserveNoEOL' " dependency
