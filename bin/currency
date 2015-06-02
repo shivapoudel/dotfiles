@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Currency converter
+
+if [[ "$#" != 3 || "$1" == "-h" || "$1" == "--help" ]] ; then cat <<HELP
+Currency converter.
+
+Usage:
+currency [amount] [from] [to]
+
+Example:
+currency 1 USD NPR
+HELP
+exit; else
+  wget -qO- "http://www.google.com/finance/converter?a=$1&from=$2&to=$3" | sed '/res/!d;s/<[^>]*>//g';
+fi

@@ -1,10 +1,10 @@
-# Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation
 export ZSH=$HOME/.oh-my-zsh
 
-# Theme.
+# Theme
 ZSH_THEME="miloshadzic"
 
-# Use case-sensitive completion.
+# Use case-sensitive completion
 CASE_SENSITIVE="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
@@ -13,11 +13,14 @@ ZSH_CUSTOM=$HOME/.zsh/custom/
 # Plugins
 plugins=(git gitignore cp command-not-found rsync)
 
-# Initialize the oh-my-zsh.
+# Initialize the oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# Dotfiles PATH
+DOTFILES=$HOME/.dotfiles
+
 # User configuration
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$DOTFILES/bin"
 
 # Editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
