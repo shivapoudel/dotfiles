@@ -32,5 +32,6 @@
 	remote = green
 	current = cyan
 [alias]
+	commits = !git log --graph --decorate --abbrev-commit --all --pretty=oneline
 	pruneup = !git gc --prune=now && git remote prune origin && git remote prune upstream
 	cleanup = !git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
