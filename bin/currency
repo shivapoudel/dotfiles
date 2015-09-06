@@ -12,5 +12,5 @@ Example:
 currency 1 USD NPR
 HELP
 exit; else
-  wget -qO- "http://www.google.com/finance/converter?a=$1&from=$2&to=$3" | sed '/res/!d;s/<[^>]*>//g';
+	wget -qO- "http://www.google.com/finance/converter?a=$1&from=$2&to=$3" | sed '/res/!d;s/<[^>]*>//g';
 fi
