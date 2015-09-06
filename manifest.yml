@@ -3,10 +3,11 @@ root: "~/.dotfiles"
 defaults:
   fmode: 0640
   dmode: 0750
+  backend: :stdlib
 
-# components:
-#   - src: vim/vim
-#     dst: .vim
+components:
+  - src: vim
+    dst: .vim
 
 config_files:
   - src: bash/bash_profile
@@ -27,5 +28,5 @@ config_files:
   - src: npm/npmrc
     dst: .npmrc
 
-  - src: vim/vimrc
+  - src: dot/vimrc
     dst: .vimrc
