@@ -1,3 +1,15 @@
 #!/usr/bin/env bash
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
+
+vim_plugins() {
+	local destination="~/.vim/bundle/Vundle.vim"
+
+	# Clone the plugin
+	if [ ! -d $destination ]; then
+		git clone https://github.com/gmarik/Vundle.vim.git $destination
+	fi
+
+	# Install the plugin
+	vim +PluginInstall +qall
+}
+
+vim_plugins
