@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Check vim directory
+set VIM_DIR = "~/.dotfiles/.vim"
+if [ -d $VIM_DIR ]; then
+	echo "Directory is not empty."
+	exit 1
+fi
+
+# Copy vim plugin
+mkdir -p $VIM_DIR
+cp -rf ./vim/vim/** $VIM_DIR
+
+# Update vim plugins
+vim +PluginInstall +qall
