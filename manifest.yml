@@ -28,5 +28,5 @@ config_files:
   - src: npm/npmrc
     dst: .npmrc
 
-  - src: dot/vimrc
+  - src: vim/vimrc
     dst: .vimrc
