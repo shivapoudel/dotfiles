@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Clone Vundle suite
+vundle_vim_suite() {
+	if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
+		git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	fi
+}
+
+# Vim Plugins suite
+vundle_vim_suite
+
+# Run Config Curator
+curate -v
+
+# Install the plugin
+vim +PluginInstall +qall
