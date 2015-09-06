@@ -14,6 +14,7 @@ Install
 ```bash
 git clone git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
+$ ./vim-plugins
 $ curate -v
 ```
 
