@@ -1,0 +1,27 @@
+---
+root: "~/.dotfiles"
+defaults:
+  fmode: 0640
+  dmode: 0750
+
+config_files:
+  - src: bash/bash_profile
+    dst: .bash_profile
+
+  - src: bash/bashrc
+    dst: .bashrc
+
+  - src: git/gitconfig
+    dst: .gitconfig
+
+  - src: git/gitignore_global
+    dst: .gitignore_global
+
+  - src: mintty/minttyrc
+    dst: .minttyrc
+
+  - src: npm/npmrc
+    dst: .npmrc
+
+  - src: vim/vimrc
+    dst: .vimrc
