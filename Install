@@ -7,11 +7,16 @@ vundle_vim_suite() {
 	fi
 }
 
-# Vim Plugins suite
+# Config Curator Suite
+config_curate_suite() {
+	if [[ ! -f ~/.gitconfig ]]; then
+		curate -v
+	fi
+}
+
+# Run the suites
 vundle_vim_suite
+config_curate_suite
 
-# Run Config Curator
-curate -v
-
-# Install the plugin
+# Upgrade vim plugin
 vim +PluginInstall +qall
