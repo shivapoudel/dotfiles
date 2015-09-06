@@ -4,6 +4,10 @@ defaults:
   fmode: 0640
   dmode: 0750
 
+# components:
+#   - src: vim/vim
+#     dst: .vim
+
 config_files:
   - src: bash/bash_profile
     dst: .bash_profile
