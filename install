@@ -4,19 +4,17 @@
 vundle_vim_suite() {
 	if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
 		git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+		cp -rf "${PWD}/vim/vim/snippets/" ~/.vim/snippets/
 	fi
 }
 
-# Config Curator Suite
+# Config Curator suite
 config_curate_suite() {
 	if [[ ! -f ~/.gitconfig ]]; then
 		curate -v
 	fi
 }
 
-# Run the suites
 vundle_vim_suite
 config_curate_suite
-
-# Upgrade vim plugin
 vim +PluginInstall +qall
