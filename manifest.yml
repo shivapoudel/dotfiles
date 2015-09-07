@@ -4,9 +4,9 @@ defaults:
   dmode: 0750
   backend: :stdlib
 
-# components:
-#   - src: vim
-#     dst: .vim
+components:
+  - src: vim/vim
+    dst: .vim
 
 config_files:
   - src: bash/bash_profile
