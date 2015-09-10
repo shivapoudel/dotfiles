@@ -12,7 +12,7 @@ Install
 -------
 
 ```bash
-git clone git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
+git clone --recursive git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./install
 ```
