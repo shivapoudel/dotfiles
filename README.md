@@ -12,9 +12,10 @@ Install
 -------
 
 ```bash
-git clone --recursive git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
+git clone --recursive https://github.com/shivapoudel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-./install
+curate -v
+./vim-plugins
 ```
 
 License
