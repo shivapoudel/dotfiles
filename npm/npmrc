@@ -1,1 +1,2 @@
 tmp = ${HOME}/.tmp-npm
+save-prefix=~
