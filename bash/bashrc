@@ -1,5 +1,6 @@
 export PATH="$PATH:$HOME/.wp-cli"
 export PATH="$PATH:$HOME/.apigen"
+export PATH="$PATH:$HOME/.phploy"
 export PATH="$PATH:$HOME/.phpunit"
 
 # Environment var of WP_TESTS_DIR & WP_CORE_DIR
