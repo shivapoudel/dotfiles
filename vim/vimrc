@@ -73,6 +73,9 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
+" Languages
+Plugin 'fatih/vim-go'
+
 " ------------------------
 " Vundle end configuration
 " ------------------------
