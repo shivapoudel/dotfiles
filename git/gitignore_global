@@ -22,10 +22,13 @@
 
 # Logs and databases #
 ######################
-*.ini
 *.log
 *.sql
 *.sqlite
+
+# PHPloy config file #
+######################
+deploy.ini
 
 # OS generated files #
 ######################
