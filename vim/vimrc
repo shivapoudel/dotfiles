@@ -49,7 +49,7 @@ let g:user_emmet_leader_key='<C-Z>'
 " --------------
 
 " Vundle core
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " itf_flat colorscheme
 Plugin 'cdmedia/itg_flat_vim'
