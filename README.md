@@ -3,7 +3,7 @@ Dotfiles
 
 > This repository contains machine-specific configuration to accompany my dotfiles.
 
-After cloning this repo, run `install` to automatically set up the dotfiles development
+After cloning this repo, run `curate -v` to automatically set up the dotfiles development
 environment. Note that the install script is idempotent: it can safely be run multiple times.
 
 __Please Note:__ Dotfiles uses [config_curator](https://rubygems.org/gems/config_curator) gem for installation.
