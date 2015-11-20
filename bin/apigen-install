@@ -2,7 +2,7 @@
 # ApiGen Installer
 #
 
-curl -LO# https://github.com/ApiGen/ApiGen.github.io/raw/master/apigen.phar
+curl -SO# http://www.apigen.org/apigen.phar
 chmod +x apigen.phar
 mkdir -p /usr/local/bin
 mv apigen.phar /usr/local/bin/apigen
