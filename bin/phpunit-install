@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# PHPUnit Installer
+#
+
+curl -SO# https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+mkdir -p /usr/local/bin
+mv phpunit.phar /usr/local/bin/phpunit
+echo @php '"%~dp0phpunit"' %* > /usr/local/bin/phpunit.bat
+phpunit --version

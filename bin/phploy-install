@@ -7,4 +7,4 @@ chmod +x phploy.phar
 mkdir -p /usr/local/bin
 mv phploy.phar /usr/local/bin/phploy
 echo @php '"%~dp0phploy"' %* > /usr/local/bin/phploy.bat
-phploy --info
+phploy --version
