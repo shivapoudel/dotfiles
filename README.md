@@ -19,7 +19,7 @@ curate -v
 
 # Tools Installer
 mkdir /usr/local/bin
-./bin/{phploy|phpunit|wp-cli}-install
+./bin/{apigen|phploy|phpunit|wp-cli}-install
 ```
 
 For Windows add `{git_executable_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
