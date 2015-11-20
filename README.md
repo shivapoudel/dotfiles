@@ -4,7 +4,7 @@ Dotfiles
 > This repository contains machine-specific configuration to accompany my dotfiles.
 
 After cloning this repo, run `curate -v` to automatically set up the dotfiles development
-environment. Note that the install script is idempotent: it can safely be run multiple times.
+environment.
 
 __Please Note:__ Dotfiles uses [config_curator](https://rubygems.org/gems/config_curator) gem for installation.
 
@@ -19,7 +19,7 @@ curate -v
 ./bin/{phploy|phpunit|wp-cli}-install
 ```
 
-__Please Note:__ For Windows add `{git_installation_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
+For Windows add `{git_executable_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
 
 License
 -------
