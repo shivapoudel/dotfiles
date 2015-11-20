@@ -4,7 +4,6 @@
 
 curl -SO# http://www.apigen.org/apigen.phar
 chmod +x apigen.phar
-mkdir -p /usr/local/bin
 mv apigen.phar /usr/local/bin/apigen
 echo @php '"%~dp0apigen"' %* > /usr/local/bin/apigen.bat
 apigen --version

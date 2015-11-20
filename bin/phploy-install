@@ -4,7 +4,6 @@
 
 curl -SO# https://raw.githubusercontent.com/banago/PHPloy/master/bin/phploy.phar
 chmod +x phploy.phar
-mkdir -p /usr/local/bin
 mv phploy.phar /usr/local/bin/phploy
 echo @php '"%~dp0phploy"' %* > /usr/local/bin/phploy.bat
 phploy --version

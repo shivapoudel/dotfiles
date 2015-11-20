@@ -4,7 +4,6 @@
 
 curl -SO# https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
-mkdir -p /usr/local/bin
 mv wp-cli.phar /usr/local/bin/wp
 echo @php '"%~dp0wp"' %* > /usr/local/bin/wp.bat
 wp --version

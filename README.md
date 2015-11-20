@@ -16,6 +16,9 @@ git clone --recursive https://github.com/shivapoudel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 curate -v
 ./vim-plugins
+
+# Tools Installer
+mkdir /usr/local/bin
 ./bin/{phploy|phpunit|wp-cli}-install
 ```
 
