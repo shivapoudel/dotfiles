@@ -18,7 +18,7 @@ curate -v
 ./vim-plugins
 
 # Tools Installer
-mkdir /usr/local/bin
+mkdir -p /usr/local/bin
 ./bin/{apigen|phpcs|phploy|phpunit|wp-cli}-install
 ```
 
