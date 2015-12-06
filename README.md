@@ -1,5 +1,4 @@
-Dotfiles
-========
+# Dotfiles
 
 > This repository contains machine-specific configuration to accompany my dotfiles.
 
@@ -8,8 +7,7 @@ environment.
 
 __Please Note:__ Dotfiles uses [config_curator](https://rubygems.org/gems/config_curator) gem for installation.
 
-Install
--------
+# Install
 
 ```bash
 git clone --recursive https://github.com/shivapoudel/dotfiles.git ~/.dotfiles
@@ -24,8 +22,7 @@ mkdir /usr/local/bin
 
 For Windows add `{git_executable_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
 
-License
--------
+# License
 
 Copyright (c) 2015 Shiva Poudel  
 Licensed under the MIT license:  
