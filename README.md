@@ -10,12 +10,18 @@ __Please Note:__ Dotfiles uses [config_curator](https://rubygems.org/gems/config
 # Install
 
 ```bash
-git clone --recursive git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
+git clone git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
+
+# Submodule
+git submodule init
+git submodule update
+
+# Dotfiles
 curate -v
 ./vim-plugins
 
-# Tools Installer
+# Installer
 mkdir -p /usr/local/bin
 ./bin/{apigen|phpcs|phploy|phpunit|wp-cli}-install
 ```
