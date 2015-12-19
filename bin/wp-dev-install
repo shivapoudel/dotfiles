@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Install WordPress Dev Tools
+#
+
+svn co http://develop.svn.wordpress.org/trunk/ ~/.dotfiles/wp/dev
