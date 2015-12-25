@@ -7,6 +7,8 @@
 	editor = vim
 	autocrlf = false
 	excludesfile = ~/.gitignore_global
+[fetch]
+	prune = true
 [color]
 	# ui = true is a superset of all the more specific color options
 	# as documented at http://book.git-scm.com/5_customizing_git.html
@@ -33,5 +35,4 @@
 	current = cyan
 [alias]
 	commits = !git log --graph --decorate --abbrev-commit --all --pretty=oneline
-	pruneup = !git gc --prune=now && git remote prune origin && git remote prune upstream
 	cleanup = !git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
