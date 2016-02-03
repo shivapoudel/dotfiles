@@ -1,3 +1,5 @@
+export VAGRANT_HOME="/d/.vagrant.d"
+
 # Environment var of WP_TESTS_DIR & WP_CORE_DIR
 export WP_TESTS_DIR="./tmp/wordpress-tests-lib"
 export WP_CORE_DIR="./tmp/wordpress/"
