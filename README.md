@@ -9,6 +9,8 @@ __Please Note:__ Dotfiles uses [config_curator](https://rubygems.org/gems/config
 
 # Install
 
+For Windows add `{git_executable_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
+
 ```bash
 git clone git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
@@ -25,8 +27,6 @@ curate -v
 mkdir -p /usr/local/bin
 ./bin/{apigen|phpcs|phploy|phpunit|wp-cli|wp-dev}-install
 ```
-
-For Windows add `{git_executable_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
 
 # License
 
