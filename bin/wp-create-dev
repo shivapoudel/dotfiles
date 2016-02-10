@@ -19,8 +19,8 @@ name=$( echo $1 | sed 's/.dev//g' )
 
 # Install WP
 echo " -> Installing WordPress..."
-mkdir -p /var/www/$name
-cd /var/www/$name
+mkdir -p /d/htdocs/$name
+cd /d/htdocs/$name
 wp core download
 wp core config --dbname="$name" --dbuser="root" --extra-php <<PHP
 /** WordPress Debugging. */
