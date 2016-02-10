@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# SSL Generator (openssl)
+#
+
+if [[ "$#" != 1 || "$1" == "-h" || "$1" == "--help" ]] ; then cat <<HELP
+SSL Generator.
+Creates ssl certificates using openssl.
+Usage:
+ssl-generator [domain]
+Example:
+wp-create-dev testing.dev
+HELP
+exit;
+fi
+
+name=$( echo $1 | sed 's/.dev//g' )
+
+# Create SSL Certificate
+openssl genrsa -out ~/ssl/$name.key 2048
+openssl req -new -x509 -key ~/ssl/$name.key -out ~/ssl/$name.cert -days 7300

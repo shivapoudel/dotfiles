@@ -5,9 +5,6 @@ defaults:
   backend: :stdlib
 
 components:
-  - src: ssl
-    dst: .ssl
-
   - src: vim/vim
     dst: .vim
 
