@@ -2,7 +2,7 @@
 	name = Shiva Poudel
 	email = dev.shivapoudel@gmail.com
 [push]
-	default = simple
+	default = matching
 [core]
 	editor = vim
 	autocrlf = false
