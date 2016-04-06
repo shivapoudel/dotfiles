@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Weather by http://wttr.in/
+#
+
+if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+  curl http://wttr.in/:help
+else
+  curl http://wttr.in/$1
+fi
