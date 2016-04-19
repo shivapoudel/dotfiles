@@ -26,6 +26,10 @@
 *.sql
 *.sqlite
 
+# BS config file #
+##################
+bs-config.js
+
 # PHPloy config file #
 ######################
 deploy.ini
