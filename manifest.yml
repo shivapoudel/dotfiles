@@ -5,6 +5,9 @@ defaults:
   backend: :stdlib
 
 components:
+  - src: bash/completion
+    dst: completion
+
   - src: vim/vim
     dst: .vim
 
