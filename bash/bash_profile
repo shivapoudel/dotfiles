@@ -3,7 +3,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # Tab completion scripts
-if [ -d ~/completion ]; then
+#if [ -d ~/completion ]; then
 	source ~/completion/wp-completion.bash
 	source ~/completion/terminus-completion.bash
-fi
+#fi
