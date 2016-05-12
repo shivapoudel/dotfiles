@@ -5,13 +5,13 @@ defaults:
   backend: :stdlib
 
 components:
-  - src: bash/completion
-    dst: completion
-
   - src: vim/vim
     dst: .vim
 
 config_files:
+  - src: bash/bash_completion
+    dst: .bash_completion
+
   - src: bash/bash_profile
     dst: .bash_profile
 

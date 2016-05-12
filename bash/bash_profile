@@ -2,13 +2,12 @@ if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
 
-# Tab completion scripts
-if [ -d ~/completion ]; then
-	source ~/completion/wp-completion.bash
-	source ~/completion/terminus-completion.bash
+# Bash completion script
+if [ -f ~/.bash_completion ]; then
+	source ~/.bash_completion
 fi
 
-# Environment var configuration
+# Environment configuration
 export VAGRANT_HOME="/d/.vagrant.d"
 export WP_TESTS_DIR="./tmp/wordpress-tests-lib"
 export WP_CORE_DIR="./tmp/wordpress/"
