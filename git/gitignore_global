@@ -32,7 +32,8 @@ bs-config.js
 
 # PHPloy config file #
 ######################
-deploy.ini
+.phploy
+phploy.ini
 
 # OS generated files #
 ######################
