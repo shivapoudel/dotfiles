@@ -22,7 +22,7 @@ echo " -> Installing WordPress..."
 mkdir -p /d/htdocs/$name
 cd /d/htdocs/$name
 wp core download
-wp core config --dbname="$name" --dbuser="root" --extra-php <<PHP
+wp core config --dbname="$name" --dbuser="root" --dbpass="root" --extra-php <<PHP
 /** WordPress Debugging. */
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
