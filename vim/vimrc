@@ -33,7 +33,7 @@ set shell=bash
 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call vundle#begin('~/.vim/vimfiles')
 
 " ---------------------
 " Plugins configuration
