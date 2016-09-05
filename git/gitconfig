@@ -4,7 +4,7 @@
 [push]
 	default = matching
 [http]
-	postBuffer = 524288000
+	postBuffer = 104857600
 [core]
 	editor = vim
 	autocrlf = false
