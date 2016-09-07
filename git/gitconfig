@@ -3,6 +3,8 @@
 	email = dev.shivapoudel@gmail.com
 [push]
 	default = matching
+[http]
+	postBuffer = 524288000
 [core]
 	editor = vim
 	autocrlf = false
