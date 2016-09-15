@@ -28,6 +28,12 @@ mkdir -p /usr/local/bin
 ./bin/{apigen|phpcs|phploy|phpunit|wp-cli|wp-dev}-install
 ```
 
+# Update
+
+```bash
+git submodule update --remote
+```
+
 # License
 
 Copyright (c) 2015 Shiva Poudel  

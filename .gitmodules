@@ -1,7 +1,9 @@
 [submodule "vim/vim/bundle/Vundle.vim"]
 	path = vim/vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-[submodule "bin/wpcs"]
-	path = bin/wpcs
+[submodule "wp/wpcs"]
+	path = wp/wpcs
 	url = https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git
-	branch = master
+[submodule "wp/dev"]
+	path = wp/dev
+	url = git://develop.git.wordpress.org/

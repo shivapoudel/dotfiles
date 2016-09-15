@@ -16,5 +16,5 @@ echo @php '"%~dp0phpcbf"' %* > /usr/local/bin/phpcbf.bat
 
 # Add WordPress Coding Standards
 cp -rf bin/wpcs/ /usr/local/bin/
-phpcs --config-set installed_paths /usr/local/bin/wpcs
+phpcs --config-set installed_paths /usr/local/wp/wpcs
 phpcs -i
