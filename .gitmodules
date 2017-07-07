@@ -7,3 +7,6 @@
 [submodule "wp/dev"]
 	path = wp/dev
 	url = git://develop.git.wordpress.org/
+[submodule "php/phpcs"]
+	path = php/phpcs
+	url = https://github.com/squizlabs/PHP_CodeSniffer.git
