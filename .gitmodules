@@ -10,3 +10,6 @@
 [submodule "php/phpcs"]
 	path = php/phpcs
 	url = https://github.com/squizlabs/PHP_CodeSniffer.git
+[submodule "php/code_sniffer_standards/PHPCompatibility"]
+	path = php/code_sniffer_standards/PHPCompatibility
+	url = https://github.com/wimg/PHPCompatibility.git
