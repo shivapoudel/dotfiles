@@ -25,7 +25,6 @@ set ttyfast
 set scrolloff=5
 set backspace=indent,eol,start
 set autoindent
-set shell=bash
 
 " --------------------
 " Vundle configuration
@@ -48,6 +47,9 @@ let g:user_emmet_leader_key='<C-Z>'
 " --------------
 " Vundle plugins
 " --------------
+
+" Themes
+Plugin 'vim-airline/vim-airline-themes'
 
 " Vundle core
 Plugin 'VundleVim/Vundle.vim'
