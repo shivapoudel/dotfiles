@@ -38,3 +38,8 @@
 	untrack = ! git diff --name-only --diff-filter=U | xargs git rm
 	cleanup = ! git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
 	changelog = "!_() { t=$(git describe --abbrev=0 --tags); git log ${t}..HEAD --no-merges --pretty=format:'* %s'; }; _"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
