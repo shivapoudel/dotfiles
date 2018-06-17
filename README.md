@@ -25,7 +25,7 @@ curate -v
 
 # Installer
 mkdir -p /usr/local/bin
-./bin/{apigen|phpcs|phploy|phpunit|wp-cli|wp-dev}-install
+./bin/{phploy|wp-cli}-install
 ```
 
 # Update

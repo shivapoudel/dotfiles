@@ -1,2 +1,0 @@
-# Setup PHP_CodeSniffer.
-./php/phpcs/scripts/phpcs --config-set installed_paths ~/.dotfiles/wp/wpcs

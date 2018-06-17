@@ -6,8 +6,3 @@ fi
 if [ -f ~/.bash_completion ]; then
 	source ~/.bash_completion
 fi
-
-# Environment configuration
-export VAGRANT_HOME="/d/.vagrant.d"
-export WP_TESTS_DIR="./tmp/wordpress-tests-lib"
-export WP_CORE_DIR="./tmp/wordpress/"

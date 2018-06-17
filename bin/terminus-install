@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Terminus Installer
-#
-
-curl -SLO# https://github.com/pantheon-systems/terminus/releases/download/0.11.1/terminus.phar
-chmod +x terminus.phar
-mv terminus.phar /usr/local/bin/terminus
-echo @php '"%~dp0terminus"' %* > /usr/local/bin/terminus.bat
-terminus cli version

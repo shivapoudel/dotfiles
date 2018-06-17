@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# ApiGen Installer
-#
-
-curl -SO# http://www.apigen.org/apigen.phar
-chmod +x apigen.phar
-mv apigen.phar /usr/local/bin/apigen
-echo @php '"%~dp0apigen"' %* > /usr/local/bin/apigen.bat
-apigen --version
