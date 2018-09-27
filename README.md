@@ -25,7 +25,7 @@ curate -v
 
 # Installer
 mkdir -p /usr/local/bin
-./bin/{phploy|wp-cli}-install
+./bin/wp-cli-install
 ```
 
 # Update
