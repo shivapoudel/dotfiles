@@ -17,6 +17,9 @@ git submodule update
 # Dotfiles
 ./install
 
+# Vim plugins
+vim +PluginInstall +qall
+
 # Installer
 mkdir -p /usr/local/bin
 ./bin/{wp-cli|phploy}-install
@@ -25,7 +28,7 @@ mkdir -p /usr/local/bin
 # Update
 
 ```bash
-git submodule update --remote
+git submodule update --init --recursive
 ```
 
 # License

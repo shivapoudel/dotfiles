@@ -62,7 +62,7 @@ Plugin 'vim-airline/vim-airline'
 
 " Editorconfig
 Plugin 'vim-scripts/PreserveNoEOL' " dependency
-" Plugin 'editorconfig/editorconfig-vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Markdown
 Plugin 'tpope/vim-markdown'
