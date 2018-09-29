@@ -7,18 +7,11 @@
 For Windows add PHP and `{git_executable_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
 
 ```bash
-git clone git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
+git clone --recursive git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-
-# Submodule
-git submodule init
-git submodule update
 
 # Dotfiles
 ./install
-
-# Vim plugins
-vim +PluginInstall +qall
 
 # Installer
 mkdir -p /usr/local/bin
