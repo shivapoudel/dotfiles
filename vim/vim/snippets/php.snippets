@@ -8,18 +8,33 @@ snippet wpdev
 	define( 'WP_DEBUG', true );
 	define( 'WP_DEBUG_LOG', true );
 	define( 'WP_DEBUG_DISPLAY', true );
+	define( 'SCRIPT_DEBUG', ${1:true} );
+	define( 'WP_MEMORY_LIMIT', '${2:64M}' );
+	define( 'WP_MAX_MEMORY_LIMIT', '${3:256M}' );
+	define( 'WP_DEFAULT_THEME', '${4:twentytwelve}' );
+
+	/** WooCommerce Debugging */
+	define( 'WC_REMOVE_ALL_DATA', ${9:false} );
+	define( 'WC_TEMPLATE_DEBUG_MODE', ${10:false} );
+	define( 'WC_LOG_HANDLER', 'WC_Log_Handler_DB' );
 snippet wpph
 	/**
 	 * Plugin Name: ${1:Lorem Ipsum}
-	 * Plugin URI: https://github.com/axisthemes/${2:repo}
+	 * Plugin URI: https://github.com/shivapoudel/${2:slug}
 	 * Description: ${3:Lorem Ipsum}
-	 * Author: AxisThemes
-	 * Author URI: http://axisthemes.com
-	 * Version: 0.0.1
-	 * License: GPLv2 or later
-	 * Text Domain: ${4:textdomain}
+	 * Version: 1.0.0
+	 * Author: Shiva Poudel
+	 * Author URI: http://shivapoudel.com
+	 * License: GPLv3 or later
+	 * Text Domain: ${2:slug}
 	 * Domain Path: /languages/
+	 *
+	 * @package ${4:Package}
 	 */
+
+	if ( ! defined( 'ABSPATH' ) ) {
+		exit; // Exit if accessed directly.
+	}
 
 # WordPress Functions Snippets
 snippet __
