@@ -4,7 +4,7 @@
 [push]
 	default = matching
 [core]
-	editor = 'C:\\Program Files\\Sublime Text 3\\sublime_text.exe' -w
+	editor = vim
 	autocrlf = false
 	excludesfile = ~/.gitignore_global
 	pager = less -x1,5
