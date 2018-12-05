@@ -4,10 +4,10 @@
 [push]
 	default = matching
 [core]
-	editor = vim
 	autocrlf = false
-	excludesfile = ~/.gitignore_global
 	pager = less -x1,5
+	editor = code --wait
+	excludesfile = ~/.gitignore_global
 [fetch]
 	prune = true
 [color]
