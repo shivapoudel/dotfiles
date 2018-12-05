@@ -24,6 +24,6 @@ git submodule update --init --recursive --remote
 
 # License
 
-Copyright (c) 2018 Shiva Poudel 
-Licensed under the MIT license: 
+Copyright (c) 2018 Shiva Poudel  
+Licensed under the MIT license:  
 <http://shivapoudel.mit-license.org/>
