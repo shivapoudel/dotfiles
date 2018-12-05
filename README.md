@@ -6,14 +6,14 @@
 
 For Windows add PHP and `{git_executable_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
 
-__Please Note:__ Use as administrator privilage within VS Code terminal or CMD.
+__Please Note:__ Use as administrator privilage within VS Code terminal.
 
 ```bash
 git clone --recursive git@github.com:shivapoudel/dotfiles.git .dotfiles
 cd ~/.dotfiles
 
 # Dotfiles
-sh install
+./install
 ```
 
 # Update

@@ -1,0 +1,37 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+shift+f",
+        "command": "filesExplorer.findInFolder",
+        "when": "!editorFocus"
+    },
+    {
+		"key": "ctrl+shift+a",
+		"command": "wwm.aligncode",
+		"when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "openInTerminal",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+shift+x",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "workbench.action.toggleMaximizedPanel"
+    }
+]

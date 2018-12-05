@@ -7,11 +7,17 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig: git/gitconfig
-    ~/.gitignore_global: git/gitignore_global
-    ~/.npmrc: npm/npmrc
-    ~/.vim: vim/vim
-    ~/.vimrc: vim/vimrc
+    # Git:
+    ~/.gitconfig: config/gitconfig
+    ~/.gitignore_global: config/gitignore_global
+
+    # NPM:
+    ~/.npmrc: config/npmrc
+
+    # Editors:
+    "~/AppData/Roaming/Code/User/snippets": vscode/snippets
+    "~/AppData/Roaming/Code/User/settings.json": vscode/settings.json
+    "~/AppData/Roaming/Code/User/keybindings.json": vscode/keybindings.json
 
 - shell:
-    - [vim +PluginInstall +qall, Installing Vim Plugins]
+  - [bash ./vscode/install.sh, Installing Visual Studion Code Extensions]
