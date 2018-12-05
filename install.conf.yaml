@@ -7,12 +7,8 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_completion: bash/bash_completion
-    ~/.bash_profile: bash/bash_profile
-    ~/.bashrc: bash/bashrc
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
-    ~/.minttyrc: mintty/minttyrc
     ~/.npmrc: npm/npmrc
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc

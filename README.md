@@ -6,7 +6,7 @@
 
 For Windows add PHP and `{git_executable_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
 
-__Please Note:__ Use Git CMD with administrator privilage instead of Git Bash.
+__Please Note:__ Use as administrator privilage within VS Code terminal or CMD.
 
 ```bash
 git clone --recursive git@github.com:shivapoudel/dotfiles.git .dotfiles
@@ -24,6 +24,6 @@ git submodule update --init --recursive
 
 # License
 
-Copyright (c) 2018 Shiva Poudel  
-Licensed under the MIT license:  
+Copyright (c) 2018 Shiva Poudel
+Licensed under the MIT license:
 <http://shivapoudel.mit-license.org/>
