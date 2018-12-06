@@ -9,7 +9,7 @@ For Windows add PHP and `{git_executable_path}/usr/local/bin/` directory to PATH
 __Please Note:__ Use as administrator privilage within VS Code terminal.
 
 ```bash
-git clone --recursive git@github.com:shivapoudel/dotfiles.git .dotfiles
+git clone --recursive git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
 # Dotfiles
