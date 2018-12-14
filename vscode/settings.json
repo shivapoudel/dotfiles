@@ -47,7 +47,8 @@
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-    "phpcs.standard": "PSR2",
+    "phpcs.enable": true,
+    "phpcs.standard": "WordPress",
     "phpcs.showSources": true,
     "php.suggest.basic": false,
     "javascript.format.enable": false,
@@ -57,6 +58,6 @@
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
     "vscodeWorkspaceSwitcher.paths": [
-        "C:\\Users\\shivapoudel\\OneDrive\\Apps\\workspace-sync"
+        "C:\\Users\\shivapoudel\\OneDrive\\Workspace"
     ]
 }
