@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Laragon cleanup
+#
+
+if [ -d /c/laragon/bin/heidisql ]; then
+	rm -r /c/laragon/bin/heidisql
+fi
+
+if [ -d /c/laragon/bin/notepad++ ]; then
+	rm -r /c/laragon/bin/notepad++
+fi
