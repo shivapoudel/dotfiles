@@ -4,8 +4,6 @@
 
 # Install
 
-For Windows add PHP and `{git_executable_path}/usr/local/bin/` directory to PATH using [Path Editor](https://patheditor2.codeplex.com/) tool.
-
 __Please Note:__ Use as administrator privilage within VS Code terminal.
 
 ```bash
@@ -24,6 +22,6 @@ git submodule update --init --recursive --remote
 
 # License
 
-Copyright (c) 2018 Shiva Poudel  
-Licensed under the MIT license:  
+Copyright (c) 2018 Shiva Poudel
+Licensed under the MIT license:
 <http://shivapoudel.mit-license.org/>
