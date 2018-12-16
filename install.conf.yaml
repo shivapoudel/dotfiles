@@ -22,7 +22,6 @@
     # Laragon:
     "C:/laragon/usr/sites.conf": laragon/sites.conf
     "C:/laragon/usr/laragon.ini": laragon/laragon.ini
-    "C:/laragon/usr/packages.conf": laragon/packages.conf
 
 - shell:
   - [bash ./bin/vscode-extensions, Installing Visual Studio Code Extensions]
