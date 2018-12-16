@@ -19,5 +19,10 @@
     "~/AppData/Roaming/Code/User/settings.json": vscode/settings.json
     "~/AppData/Roaming/Code/User/keybindings.json": vscode/keybindings.json
 
+    # Laragon:
+    "C:/laragon/usr/sites.conf": laragon/sites.conf
+    "C:/laragon/usr/laragon.ini": laragon/laragon.ini
+    "C:/laragon/usr/packages.conf": laragon/packages.conf
+
 - shell:
-  - [bash ./vscode/install.sh, Installing Visual Studio Code Extensions]
+  - [bash ./bin/vscode-extensions.sh, Installing Visual Studio Code Extensions]
