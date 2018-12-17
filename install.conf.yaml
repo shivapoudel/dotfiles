@@ -24,5 +24,6 @@
     "C:/laragon/usr/laragon.ini": laragon/laragon.ini
 
 - shell:
+  - [bash ./bin/wp-cli-install, Installing WP-CLI]
   - [bash ./bin/laragon-system, Creating Own Laragon Environment]
   - [bash ./bin/vscode-extensions, Installing Visual Studio Code Extensions]
