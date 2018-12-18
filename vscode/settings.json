@@ -58,7 +58,6 @@
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
     "vscodeWorkspaceSwitcher.paths": [
-        "C:\\Users\\shivapoudel\\OneDrive\\Workspace",
-        "C:\\Users\\Shiva Poudel\\OneDrive\\Workspace"
+      "C:\\Users\\shivapoudel\\OneDrive\\Workspace"
     ]
 }
