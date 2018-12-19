@@ -28,3 +28,7 @@ code --install-extension TomasHubelbauer.vscode-markdown-table-format
 code --install-extension tungvn.wordpress-snippet
 code --install-extension Tyriar.lorem-ipsum
 code --install-extension wwm.better-align
+code --install-extension mehedidracula.php-namespace-resolver
+code --install-extension wordpresstoolbox.wordpress-toolbox
+code --install-extension yogensia.searchwpdocs
+code --install-extension wk-j.save-and-run
