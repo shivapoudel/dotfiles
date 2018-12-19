@@ -47,7 +47,7 @@
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-    "phpcs.standard": "PSR2",
+    "phpcs.standard": "WordPress",
     "phpcs.showSources": true,
     "php.suggest.basic": false,
     "javascript.format.enable": false,
