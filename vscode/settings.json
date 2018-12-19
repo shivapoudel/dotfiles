@@ -12,6 +12,9 @@
     "[html]": {
         "editor.formatOnSave": true
     },
+    "[php]": {
+        "editor.formatOnSave": false,
+    },
     "editor.minimap.enabled": false,
     "editor.detectIndentation": false,
     "editor.trimAutoWhitespace": true,
@@ -47,9 +50,23 @@
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-    "phpcs.standard": "WordPress",
     "phpcs.showSources": true,
+    "phpcs.standard": "WordPress",
+    "phpcs.ignorePatterns": [
+        "**/vendor/**",
+        "**/node_modules/**"
+    ],
     "php.suggest.basic": false,
+    "intelephense.formatProvider.enable": false,
+    "saveAndRun": {
+        "commands": [
+            {
+                "match": "\\.php$",
+                "cmd": "phpcbf -q --standard='WordPress' '${file}'",
+                "silent": true,
+            }
+        ]
+    },
     "javascript.format.enable": false,
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
