@@ -54,7 +54,7 @@
 	"Debug on WooCommerce": {
 		"prefix": "wc_debug",
 		"body": [
-			"/** WooCommerce Debugging */"
+			"/** WooCommerce Debugging */",
 			"define( 'WC_REMOVE_ALL_DATA', ${1:false} );",
 			"define( 'WC_TEMPLATE_DEBUG_MODE', ${2:false} );",
 			"define( 'WC_LOG_HANDLER', 'WC_Log_Handler_DB' );"
