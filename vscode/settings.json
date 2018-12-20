@@ -25,15 +25,12 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#262626",
-    "gitDecoration.modifiedResourceForeground": "#a00"
-  },
   "explorer.confirmDelete": false,
   "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.rendererType": "dom",
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "diffEditor.renderSideBySide": false,
   "files.trimTrailingWhitespace": true,
@@ -52,7 +49,7 @@
   "git.enableSmartCommit": true,
   "phpcs.showSources": true,
   "phpcs.standard": "WordPress",
-  "phpcs.ignorePatterns": ["**/vendor/**", "**/node_modules/**"],
+  "phpcs.ignorePatterns": ["*/vendor/*", "*/node_modules/*"],
   "php.suggest.basic": false,
   "intelephense.formatProvider.enable": false,
   "saveAndRun": {
