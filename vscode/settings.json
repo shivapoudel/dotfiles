@@ -1,79 +1,76 @@
 {
-    "editor.tabSize": 4,
-    "editor.fontSize": 12,
-    "editor.wordWrap": "off",
-    "editor.useTabStops": true,
-    "editor.insertSpaces": false,
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": false,
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
-    "[html]": {
-        "editor.formatOnSave": true
-    },
-    "[php]": {
-        "editor.formatOnSave": false,
-    },
-    "editor.minimap.enabled": false,
-    "editor.detectIndentation": false,
-    "editor.trimAutoWhitespace": true,
-    "editor.snippetSuggestions": "top",
-    "editor.renderWhitespace": "all",
-    "editor.renderLineHighlight": "all",
-    "workbench.colorTheme": "GitHub Plus",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#262626",
-        "gitDecoration.modifiedResourceForeground": "#a00"
-    },
-    "explorer.confirmDelete": false,
-    "explorer.openEditors.visible": 0,
-    "explorer.confirmDragAndDrop": false,
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "diffEditor.renderSideBySide": false,
-    "files.trimTrailingWhitespace": true,
-    "files.exclude": {
-        "**/.github": true,
-        "**/.vscode": true,
-        "**/.sass-cache": true,
-        "**/.wordpress-org": true,
-        "**/apigen/**": true,
-        "**/vendor/**": true,
-        "**/node_modules/**": true
-    },
-    "search.location": "panel",
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "phpcs.showSources": true,
-    "phpcs.standard": "WordPress",
-    "phpcs.ignorePatterns": [
-        "**/vendor/**",
-        "**/node_modules/**"
-    ],
-    "php.suggest.basic": false,
-    "intelephense.formatProvider.enable": false,
-    "saveAndRun": {
-        "commands": [
-            {
-                "match": "\\.php$",
-                "cmd": "phpcbf -q --standard='WordPress' '${file}'",
-                "silent": true,
-            }
-        ]
-    },
-    "javascript.format.enable": false,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "extensions.ignoreRecommendations": true,
-    "extensions.showRecommendationsOnlyOnDemand": true,
-    "vscodeWorkspaceSwitcher.paths": [
-      "C:\\Users\\shivapoudel\\OneDrive\\Workspace"
+  "editor.tabSize": 4,
+  "editor.fontSize": 12,
+  "editor.wordWrap": "off",
+  "editor.useTabStops": true,
+  "editor.insertSpaces": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.formatOnSave": true
+  },
+  "[php]": {
+    "editor.formatOnSave": false
+  },
+  "editor.minimap.enabled": false,
+  "editor.detectIndentation": false,
+  "editor.trimAutoWhitespace": true,
+  "editor.snippetSuggestions": "top",
+  "editor.renderWhitespace": "all",
+  "editor.renderLineHighlight": "all",
+  "workbench.colorTheme": "GitHub Plus",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#262626",
+    "gitDecoration.modifiedResourceForeground": "#a00"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.openEditors.visible": 0,
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "diffEditor.renderSideBySide": false,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.github": true,
+    "**/.vscode": true,
+    "**/.sass-cache": true,
+    "**/.wordpress-org": true,
+    "**/apigen/**": true,
+    "**/vendor/**": true,
+    "**/node_modules/**": true
+  },
+  "search.location": "panel",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "phpcs.showSources": true,
+  "phpcs.standard": "WordPress",
+  "phpcs.ignorePatterns": ["**/vendor/**", "**/node_modules/**"],
+  "php.suggest.basic": false,
+  "intelephense.formatProvider.enable": false,
+  "saveAndRun": {
+    "commands": [
+      {
+        "match": "\\.php$",
+        "cmd": "phpcbf -q --standard='WordPress' '${file}'",
+        "silent": true
+      }
     ]
+  },
+  "javascript.format.enable": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "extensions.ignoreRecommendations": true,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "vscodeWorkspaceSwitcher.paths": [
+    "C:\\Users\\shivapoudel\\OneDrive\\Workspace"
+  ]
 }
