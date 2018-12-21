@@ -35,13 +35,15 @@
   "diffEditor.renderSideBySide": false,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
-    "**/.github": true,
     "**/.vscode": true,
+    "**/.github": true,
     "**/.sass-cache": true,
     "**/.wordpress-org": true,
-    "**/apigen/**": true,
-    "**/vendor/**": true,
-    "**/node_modules/**": true
+    "**/tmp": true,
+    "**/apigen": true,
+    "**/vendor": true,
+    "**/node_modules": true,
+    "**/__pycache__": true
   },
   "search.location": "panel",
   "git.autofetch": true,
