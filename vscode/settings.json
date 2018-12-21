@@ -30,7 +30,6 @@
   "explorer.confirmDragAndDrop": false,
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.rendererType": "dom",
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "diffEditor.renderSideBySide": false,
   "files.trimTrailingWhitespace": true,
