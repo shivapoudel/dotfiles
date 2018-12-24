@@ -4,4 +4,7 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean: [
+  '~',
+  '~/.config'
+]
