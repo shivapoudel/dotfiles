@@ -22,6 +22,5 @@ git submodule update --init --recursive --remote
 "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}"
 
 for config in ${@}; do
-    configContent="$(<"${BASE_DIR}/${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}")\n$(<"${BASE_DIR}/${META_DIR}/${CONFIG_DIR}/${config}${CONFIG_SUFFIX}")"
-    "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c <(echo -e "$configContent")
+	"${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" -c "${META_DIR}/${CONFIG_DIR}/${config}${CONFIG_SUFFIX}"
 done
