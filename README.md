@@ -1,10 +1,10 @@
 # Dotfiles
 
-> This repository contains machine-specific configuration to accompany my dotfiles.
+This repository contains machine-specific configuration to accompany my dotfiles.
 
 # Installation
 
-__Please Note:__ Use as administrator privilage within VS Code terminal.
+__Please Note:__ Use as administrator privilage within Git bash terminal.
 
 ```bash
 git clone --recursive git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
@@ -24,6 +24,25 @@ For installing single configurations:
 ```
 
 You can run these installation commands safely multiple times, if you think that helps with better installation.
+
+## Contents
+
+### Profiles
+
+```
+meta/profiles/
+└── workstation
+```
+### Dotbot configurations
+
+```
+meta/configs/
+├── git.yaml
+├── npm.yaml
+├── vscode.yaml
+├── sublime.yaml
+└── laragon.yaml
+```
 
 # License
 
