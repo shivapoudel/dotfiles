@@ -40,7 +40,6 @@ meta/configs/
 ├── git.yaml
 ├── npm.yaml
 ├── vscode.yaml
-├── sublime.yaml
 └── laragon.yaml
 ```
 
