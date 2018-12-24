@@ -3,6 +3,8 @@
 	email = dev.shivapoudel@gmail.com
 [push]
 	default = matching
+[diff]
+	ignoreSubmodules = dirty
 [core]
 	autocrlf = false
 	pager = less -x1,5
