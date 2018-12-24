@@ -2,7 +2,7 @@
 
 This repository contains machine-specific configuration to accompany my dotfiles.
 
-# Installation
+## Installation
 
 __Please Note:__ Use as administrator privilage within Git bash terminal.
 
