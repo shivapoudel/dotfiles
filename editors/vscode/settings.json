@@ -47,6 +47,7 @@
   "search.location": "panel",
   "git.autofetch": true,
   "git.confirmSync": false,
+  "git.detectSubmodules": false,
   "git.enableSmartCommit": true,
   "phpcs.showSources": true,
   "phpcs.standard": "WordPress",
