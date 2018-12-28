@@ -20,8 +20,8 @@
   "editor.detectIndentation": false,
   "editor.trimAutoWhitespace": true,
   "editor.snippetSuggestions": "top",
-  "editor.renderWhitespace": "all",
   "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "boundary",
   "diffEditor.renderSideBySide": false,
 
   // Workbence
