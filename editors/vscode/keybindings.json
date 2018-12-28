@@ -1,14 +1,14 @@
 // Place your key bindings in this file to overwrite the defaults
 [
   {
-    "key": "ctrl+shift+f",
-    "command": "filesExplorer.findInFolder",
-    "when": "!editorFocus"
-  },
-  {
     "key": "ctrl+shift+a",
     "command": "wwm.aligncode",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "filesExplorer.findInFolder",
+	"when": "explorerResourceIsFolder",
   },
   {
     "key": "ctrl+shift+t",
@@ -23,7 +23,7 @@
   {
     "key": "ctrl+shift+r",
     "command": "workbench.action.terminal.rename",
-    "when": "terminalFocus"
+	"when": "terminalFocus"
   },
   {
     "key": "ctrl+shift+j",
