@@ -39,6 +39,7 @@ meta/profiles/
 meta/configs/
 ├── git.yaml
 ├── npm.yaml
+├── bash.yaml
 ├── vscode.yaml
 └── laragon.yaml
 ```
