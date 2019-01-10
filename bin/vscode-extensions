@@ -23,6 +23,7 @@ code --install-extension MehediDracula.php-namespace-resolver
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension neilbrayfield.php-docblocker
 code --install-extension PKief.material-icon-theme
+code --install-extension ryannaddy.laravel-artisan
 code --install-extension sadesyllas.vscode-workspace-switcher
 code --install-extension thenikso.github-plus-theme
 code --install-extension TomasHubelbauer.vscode-markdown-table-format
