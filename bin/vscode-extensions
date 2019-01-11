@@ -12,6 +12,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
+code --install-extension fayras.simple-new-file
 code --install-extension felixfbecker.php-debug
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
@@ -22,7 +23,6 @@ code --install-extension joelday.docthis
 code --install-extension MehediDracula.php-namespace-resolver
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension neilbrayfield.php-docblocker
-code --install-extension patbenatar.advanced-new-file
 code --install-extension PKief.material-icon-theme
 code --install-extension ryannaddy.laravel-artisan
 code --install-extension sadesyllas.vscode-workspace-switcher

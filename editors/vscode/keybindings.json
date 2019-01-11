@@ -8,7 +8,7 @@
   {
     "key": "ctrl+shift+f",
     "command": "filesExplorer.findInFolder",
-	"when": "explorerResourceIsFolder",
+    "when": "explorerResourceIsFolder"
   },
   {
     "key": "ctrl+shift+t",
@@ -23,7 +23,7 @@
   {
     "key": "ctrl+shift+r",
     "command": "workbench.action.terminal.rename",
-	"when": "terminalFocus"
+    "when": "terminalFocus"
   },
   {
     "key": "ctrl+shift+j",
