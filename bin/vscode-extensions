@@ -16,11 +16,13 @@ code --install-extension fayras.simple-new-file
 code --install-extension felixfbecker.php-debug
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
+code --install-extension GitHub.vscode-pull-request-github
 code --install-extension GrapeCity.gc-excelviewer
 code --install-extension humao.rest-client
 code --install-extension ikappas.phpcs
 code --install-extension joelday.docthis
 code --install-extension MehediDracula.php-namespace-resolver
+code --install-extension mrmlnc.vscode-duplicate
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension neilbrayfield.php-docblocker
 code --install-extension PKief.material-icon-theme
