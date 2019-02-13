@@ -23,6 +23,11 @@ For installing single configurations:
 # see meta/configs/ for available configurations
 ```
 
+For updating submodules remotely:
+```bash
+git submodule update --remote
+```
+
 You can run these installation commands safely multiple times, if you think that helps with better installation.
 
 ## Contents
