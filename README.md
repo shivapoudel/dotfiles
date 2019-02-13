@@ -23,7 +23,7 @@ For installing single configurations:
 # see meta/configs/ for available configurations
 ```
 
-For updating submodules remotely:
+For updating submodule remotely:
 ```bash
 git submodule update --remote
 ```

@@ -42,8 +42,19 @@
 	process = git-lfs filter-process
 	required = true
 [alias]
-	untrack = ! git diff --name-only --diff-filter=U | xargs git rm
-	cleanup = ! git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
-	changelog = "!_() { t=$(git describe --abbrev=0 --tags); git log ${t}..HEAD --no-merges --pretty=format:'* %s'; }; _"
+	# Remove untracked files.
+	untrack = !git clean -f -d
+	# Find the closest tagname and generate list of all commits as changelog.
+	generate-changelog = "!f(){\
+		git log $(git describe --abbrev=0 --tags)..HEAD --no-merges --pretty=format:'* %s';\
+	}; f"
+	# Delete all local branches but master and the current one, only if they are fully merged with master.
+	delete-all-branches = "!f(){\
+		git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
+	}; f"
+	# Delete all local branches but master and the current one.
+	delete-all-branches-force = "!f(){\
+		git branch | grep -v "master" | grep -v ^* | xargs git branch -D;\
+	}; f"
 [winUpdater]
 	recentlySeenVersion = 2.20.1.windows.1
