@@ -23,6 +23,11 @@ For installing single configurations:
 # see meta/configs/ for available configurations
 ```
 
+For installing node depedencies:
+```bash
+npm i -g eslint jshint sass-lint
+```
+
 For updating submodule remotely:
 ```bash
 git submodule update --remote
@@ -52,4 +57,4 @@ meta/configs/
 
 # License
 
-Copyright (c) 2018 Shiva Poudel | Licensed under [MIT license](http://shivapoudel.mit-license.org)
+Copyright (c) 2019 Shiva Poudel | Licensed under [MIT license](http://shivapoudel.mit-license.org)
