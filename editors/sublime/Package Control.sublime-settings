@@ -1,0 +1,41 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"DocBlockr",
+		"EditorConfig",
+		"Emmet",
+		"Gist",
+		"GotoDocumentation",
+		"JavaScript Completions",
+		"jQuery",
+		"jQuery Snippets pack",
+		"Modific",
+		"Package Control",
+		"PHP Completions Kit",
+		"PHPGrammar",
+		"PHPSnippets",
+		"PHPUnit Completions",
+		"Pretty JSON",
+		"SCSS",
+		"SublimeLinter",
+		"SublimeLinter-contrib-sass-lint",
+		"SublimeLinter-eslint",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-php",
+		"SublimeLinter-phpcs",
+		"SyncedSideBar",
+		"Terminal",
+		"Theme - Alpenglow",
+		"Tomorrow Color Schemes",
+		"WooCommerce Autocomplete",
+		"WordPress",
+		"WordPress Developer Resources",
+		"WPCS Whitelist Flags"
+	]
+}

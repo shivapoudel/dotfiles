@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Plugin Name: ${1:Lorem Ipsum}
+ * Plugin URI: https://github.com/shivapoudel/${2:slug}
+ * Description: ${3:Lorem Ipsum}
+ * Version: ${4:0.0.1}
+ * Author: Shiva Poudel
+ * Author URI: https://shivapoudel.com
+ * License: GPLv3 or later
+ * Text Domain: ${2:slug}
+ * Domain Path: /languages/
+ *
+ * @package ${5:Package_Name}
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+]]></content>
+	<tabTrigger>wpph</tabTrigger>
+	<scope>source.php</scope>
+	<description>WordPress: Plugin header</description>
+</snippet>

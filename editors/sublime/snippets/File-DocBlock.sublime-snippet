@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${1:Package Title}
+ *
+ * @package ${2:Package_Name}\\${3:Category}
+ * @version ${4:1.0.0}
+ * @since   ${5:1.0.0}
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+]]></content>
+	<tabTrigger>docblock</tabTrigger>
+	<scope>source.php</scope>
+	<description>File DocBlock</description>
+</snippet>

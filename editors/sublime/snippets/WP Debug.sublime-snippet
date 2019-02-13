@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', true );
+define( 'SCRIPT_DEBUG', ${1:true} );
+define( 'WP_MEMORY_LIMIT', '${2:64M}' );
+define( 'WP_MAX_MEMORY_LIMIT', '${3:256M}' );
+define( 'WP_DEFAULT_THEME', '${4:twentytwelve}' );
+
+/** WooCommerce Debugging */
+define( 'WC_REMOVE_ALL_DATA', ${9:false} );
+define( 'WC_TEMPLATE_DEBUG_MODE', ${10:false} );
+define( 'WC_LOG_HANDLER', 'WC_Log_Handler_DB' );
+]]></content>
+	<tabTrigger>wp_debug</tabTrigger>
+	<scope>source.php</scope>
+	<description>Debug on WordPress</description>
+</snippet>
