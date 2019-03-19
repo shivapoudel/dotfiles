@@ -1,5 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [
+//   { "key": ".", "command": "" },
   {
     "key": "ctrl+shift+a",
     "command": "wwm.aligncode",

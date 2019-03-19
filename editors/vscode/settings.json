@@ -11,7 +11,7 @@
     "editor.formatOnSave": false
   },
   "[html]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[php]": {
     "editor.formatOnSave": false
