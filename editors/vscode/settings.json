@@ -29,7 +29,6 @@
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "GitHub Plus",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.settings.editor": "json",
   "workbench.settings.openDefaultKeybindings": false,
   "workbench.statusBar.feedback.visible": false,
 
