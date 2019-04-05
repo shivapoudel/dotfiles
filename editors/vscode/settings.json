@@ -7,6 +7,9 @@
   "editor.insertSpaces": false,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.formatOnSave": false
   },
