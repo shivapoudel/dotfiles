@@ -25,7 +25,7 @@
   },
   "WordPress: Default theme": {
     "prefix": "wp_default_theme",
-    "body": ["define( 'SCRIPT_DEBUG', true );"],
+    "body": ["define( 'WP_DEFAULT_THEME', twentytwelve );"],
     "description": "Set default theme on WordPress wp-config.php"
   },
   "WordPress: Memory limit": {
