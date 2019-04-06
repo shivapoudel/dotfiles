@@ -28,6 +28,11 @@
     "body": ["define( 'WP_DEFAULT_THEME', twentytwelve );"],
     "description": "Set default theme on WordPress wp-config.php"
   },
+  "WordPress: Plugin Directory": {
+    "prefix": "wp_plugin_dir",
+    "body": ["define( 'WP_PLUGIN_DIR', dirname( __FILE__ ) . '/wp-content/${1:plugins}' );"],
+    "description": "Set default theme on WordPress wp-config.php"
+  },
   "WordPress: Memory limit": {
     "prefix": "wp_memory_limit",
     "body": [
