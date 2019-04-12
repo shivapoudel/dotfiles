@@ -39,7 +39,6 @@
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
     "**/.vscode": true,
-    "**/.github": true,
     "**/.sass-cache": true,
     "**/.wordpress-org": true,
     "**/tmp": true,
