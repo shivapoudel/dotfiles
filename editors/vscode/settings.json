@@ -69,7 +69,7 @@
   // Git
   "git.autofetch": true,
   "git.confirmSync": false,
-  "git.detectSubmodules": false,
+  "git.detectSubmodules": true,
   "git.enableSmartCommit": true,
 
   // TypeScript
@@ -82,7 +82,6 @@
   "php.suggest.basic": false,
   "php-docblocker.returnVoid": false,
   "php-docblocker.useShortNames": true,
-  "intelephense.formatProvider.enable": false,
   "phpcs.showSources": true,
   "phpcs.standard": "WordPress",
   "phpcs.ignorePatterns": ["*/vendor/*", "*/node_modules/*"],
