@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # VS Code extensions Installer
 #
-# usage: code --list-extensions | xargs -L 1 echo code --install-extension
+# usage: code --list-extensions | xargs -L 1 echo code --install-extension | clip
 #
 
 code --install-extension bmewburn.vscode-intelephense-client
@@ -13,6 +13,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
+code --install-extension fatihacet.gitlab-workflow
 code --install-extension fayras.simple-new-file
 code --install-extension felixfbecker.php-debug
 code --install-extension formulahendry.auto-close-tag
