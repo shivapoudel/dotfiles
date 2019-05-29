@@ -25,7 +25,7 @@ For installing single configurations:
 
 For installing node depedencies:
 ```bash
-npm i -g eslint jshint sass-lint
+npm i -g eslint jshint sass-lint doctoc
 ```
 
 For updating submodule remotely:
