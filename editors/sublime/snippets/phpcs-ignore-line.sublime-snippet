@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-// @codingStandardsIgnoreLine
-]]></content>
-    <tabTrigger>phpcs</tabTrigger>
-    <scope>source.php</scope>
-    <description>PHPCS: ignore code line</description>
-</snippet>

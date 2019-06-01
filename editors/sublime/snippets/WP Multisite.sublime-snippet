@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-define( 'WP_ALLOW_MULTISITE', true );
-]]></content>
-	<tabTrigger>wp_multisite</tabTrigger>
-	<scope>source.php</scope>
-	<description>WordPress: Enable multisite</description>
-</snippet>

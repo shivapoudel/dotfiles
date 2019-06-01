@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-error_log( print_r( ${1:arg}, true ) );
-]]></content>
-	<tabTrigger>logger</tabTrigger>
-	<scope>source.php</scope>
-	<description>Print to console</description>
-</snippet>
