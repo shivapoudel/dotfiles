@@ -1,0 +1,1 @@
+After you lunch vscode as administrator, please delete the snippets directory for code as it is auto created and sometimes linking snippets fails.
