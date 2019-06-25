@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# WP-CLI Installer
-#
-
-curl -SO# https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-chmod +x wp-cli.phar
-mv wp-cli.phar /c/laragon/usr/bin/wp
-echo @php '"%~dp0wp"' %* > /c/laragon/usr/bin/wp.bat
-wp --version

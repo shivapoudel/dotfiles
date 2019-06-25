@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Install "ack"
-#
-
-curl -SO# https://beyondgrep.com/ack-v3.0.0
-chmod +x ack-v3.0.0
-mv ack-v3.0.0 /c/laragon/usr/bin/ack
-echo @php '"%~dp0ack"' %* > /c/laragon/usr/bin/ack.bat
-ack --version

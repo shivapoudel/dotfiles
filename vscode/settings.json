@@ -16,7 +16,7 @@
   "[php]": {
     "editor.formatOnSave": false
   },
-  "[json]": {
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.minimap.enabled": false,
@@ -71,6 +71,9 @@
   "git.confirmSync": false,
   "git.detectSubmodules": true,
   "git.enableSmartCommit": true,
+
+  // NPM
+  "npm.enableScriptExplorer": true,
 
   // TypeScript
   "javascript.format.enable": false,
