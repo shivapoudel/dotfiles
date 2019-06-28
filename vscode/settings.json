@@ -42,7 +42,7 @@
     "**/.sass-cache": true,
     "**/.wordpress-org": true,
     "**/tmp": true,
-    "**/apigen": true,
+    "**/apigen": false,
     "**/vendor": true,
     "**/node_modules": true,
     "**/__pycache__": true
