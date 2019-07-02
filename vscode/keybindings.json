@@ -31,11 +31,6 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+k",
-    "command": "workbench.action.terminal.clear",
-    "when": "terminalFocus"
-  },
-  {
     "key": "ctrl+shift+k",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
