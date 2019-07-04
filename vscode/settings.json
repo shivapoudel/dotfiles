@@ -27,13 +27,16 @@
   "editor.renderWhitespace": "boundary",
   "diffEditor.renderSideBySide": false,
 
+  // Window
+  "window.customMenuBarAltFocus": false,
+
   // Workbence
   "workbench.tips.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "GitHub Plus",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.renderIndentGuides": "onHover",
   "workbench.settings.openDefaultKeybindings": false,
-  "workbench.statusBar.feedback.visible": false,
 
   // Files
   "files.trimTrailingWhitespace": true,
