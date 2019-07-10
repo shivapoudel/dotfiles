@@ -13,6 +13,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
+code --install-extension fabiospampinato.vscode-terminals
 code --install-extension fayras.simple-new-file
 code --install-extension felixfbecker.php-debug
 code --install-extension formulahendry.auto-close-tag
