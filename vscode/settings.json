@@ -1,5 +1,5 @@
 {
-  // Editor
+  // Text Editor.
   "editor.tabSize": 4,
   "editor.fontSize": 12,
   "editor.wordWrap": "off",
@@ -28,20 +28,9 @@
   "editor.snippetSuggestions": "top",
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "boundary",
+  "editor.cursorSmoothCaretAnimation": true,
   "diffEditor.renderSideBySide": false,
-
-  // Window
-  "window.customMenuBarAltFocus": false,
-
-  // Workbence
-  "workbench.tips.enabled": false,
-  "workbench.startupEditor": "none",
-  "workbench.colorTheme": "GitHub Plus",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.tree.renderIndentGuides": "onHover",
-  "workbench.settings.openDefaultKeybindings": false,
-
-  // Files
+  "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
     "**/.vscode": true,
@@ -54,48 +43,47 @@
     "**/__pycache__": true
   },
 
-  // File Explorer
+  // Window.
+  "window.customMenuBarAltFocus": false,
+  "window.doubleClickIconToClose": true,
+
+  // Workbence.
+  "breadcrumbs.enabled": true,
+  "workbench.tips.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "GitHub Plus",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.renderIndentGuides": "onHover",
+
+  // Features.
   "explorer.confirmDelete": false,
   "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
-
-  // Extensions
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.rendererType": "auto",
+  "terminal.integrated.windowsEnableConpty": false,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
 
-  // Integrated Terminal
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.rendererType": "auto",
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.windowsEnableConpty": false,
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-
-  // Breadcrumb Navigation
-  "breadcrumbs.enabled": true,
-
-  // Git
+  // Extensions.
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.detectSubmodules": true,
   "git.enableSmartCommit": true,
-
-  // NPM
   "npm.enableScriptExplorer": true,
-
-  // TypeScript
   "javascript.format.enable": false,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
-  // PHP Configuration
   "php.suggest.basic": false,
-  "php-docblocker.returnVoid": false,
-  "php-docblocker.useShortNames": true,
   "phpcs.showSources": true,
   "phpcs.standard": "WordPress",
   "phpcs.ignorePatterns": ["*/vendor/*", "*/node_modules/*"],
+  "php-docblocker.returnVoid": false,
+  "php-docblocker.useShortNames": true,
   "saveAndRun": {
     "commands": [
       {
@@ -105,8 +93,6 @@
       }
     ]
   },
-
-  // Workspace Switcher
   "vscodeWorkspaceSwitcher.paths": [
     "C:\\Users\\shivapoudel\\OneDrive\\Workspace"
   ]
