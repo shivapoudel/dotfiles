@@ -1,4 +1,44 @@
 {
+	"Print to console": {
+		"prefix": "logger",
+		"body": ["error_log( print_r( ${1:arg}, true ) );"],
+		"description": "Log output to console"
+	},
+	"Print variable data": {
+		"prefix": "printr",
+		"body": ["echo '<pre>' . print_r( ${1:arg}, true ) . '</pre>';"],
+		"description": "Prints human-readable information about a variable."
+	},
+	"PHPCS: Ignore block": {
+		"prefix": "phpcs_ignore_block",
+		"body": [
+		  "// @codingStandardsIgnoreStart",
+		  "$1",
+		  "// @codingStandardsIgnoreEnd"
+		],
+		"description": "Ignore a block of code in PHPCS"
+	},
+	"PHPCS: Ignore line": {
+		"prefix": "phpcs_ignore_line",
+		"body": ["// @codingStandardsIgnoreLine"],
+		"description": "Ignore a line of code in PHPCS"
+	},
+	"File DocBlock": {
+		"prefix": "docblock",
+		"body": [
+		  "/**",
+		  " * ${1:Package Title}",
+		  " *",
+		  " * @package ${2:Package_Name}\\\\${3:Category}",
+		  " * @version ${4:1.0.0}",
+		  " * @since   ${5:1.0.0}",
+		  " */",
+		  "",
+		  "defined( 'ABSPATH' ) || exit;",
+		  ""
+		],
+		"description": "File DocBlock information"
+	},
 	"Debug on WordPress": {
 		"prefix": "wp_debug",
 		"body": [
@@ -35,5 +75,27 @@
 		"prefix": "wp_translators",
 		"body": ["/* translators: %s: ${1:comment} */"],
 		"description": "WordPress translators notication"
+	},
+	"WordPress: Plugin header": {
+		"prefix": "wp_plugin_header",
+		"body": [
+		  "/**",
+		  " * Plugin Name: ${1:Lorem Ipsum}",
+		  " * Plugin URI: https://github.com/shivapoudel/${2:slug}",
+		  " * Description: ${3:Lorem Ipsum}",
+		  " * Version: ${4:0.0.1}",
+		  " * Author: Shiva Poudel",
+		  " * Author URI: https://shivapoudel.com",
+		  " * License: GPLv3 or later",
+		  " * Text Domain: ${2:slug}",
+		  " * Domain Path: /languages/",
+		  " *",
+		  " * @package ${5:Package_Name}",
+		  " */",
+		  "",
+		  "defined( 'ABSPATH' ) || exit;",
+		  ""
+		],
+		"description": "Plugin header information"
 	}
 }
