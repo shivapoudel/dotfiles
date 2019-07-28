@@ -4,4 +4,4 @@
     "~/AppData/Roaming/Code/User/keybindings.json": vscode/keybindings.json
 
 - shell:
-  - [code --install-extension shivapoudel.wp-extension-pack, Installing VS Code Extensions]
+  - [bash ./bin/vscode-extensions, Installing VS Code Extensions]
