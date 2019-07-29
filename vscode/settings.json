@@ -50,7 +50,8 @@
   // Workbence.
   "breadcrumbs.enabled": true,
   "workbench.tips.enabled": false,
-"workbench.startupEditor": "none",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "GitHub Plus",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.renderIndentGuides": "onHover",
 
