@@ -6,7 +6,7 @@
 [diff]
 	ignoreSubmodules = dirty
 [core]
-	autocrlf = false
+	autocrlf = true
 	pager = less -x1,5
 	editor = code --wait
 	excludesfile = ~/.gitignore_global
