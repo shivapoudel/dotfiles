@@ -26,15 +26,6 @@
 *.sql
 *.sqlite
 
-# BS config file #
-##################
-bs-config.js
-
-# PHPloy config file #
-######################
-.phploy
-phploy.ini
-
 # OS generated files #
 ######################
 .DS_Store

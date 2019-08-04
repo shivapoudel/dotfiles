@@ -4,12 +4,6 @@
 # usage: code --list-extensions | xargs -L 1 echo code --install-extension | clip
 #
 
-#!/usr/bin/env bash
-# VS Code extensions Installer
-#
-# usage: code --list-extensions | xargs -L 1 echo code --install-extension | clip
-#
-
 code --install-extension bmewburn.vscode-intelephense-client
 code --install-extension bradgashler.htmltagwrap
 code --install-extension christian-kohler.path-intellisense
