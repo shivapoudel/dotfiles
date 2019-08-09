@@ -27,7 +27,7 @@
   "editor.trimAutoWhitespace": true,
   "editor.snippetSuggestions": "top",
   "editor.renderLineHighlight": "all",
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "selection",
   "editor.cursorSmoothCaretAnimation": true,
   "diffEditor.renderSideBySide": false,
   "files.trimFinalNewlines": true,
@@ -73,7 +73,6 @@
   "git.confirmSync": false,
   "git.detectSubmodules": true,
   "git.enableSmartCommit": true,
-  "npm.enableScriptExplorer": true,
   "javascript.format.enable": false,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
