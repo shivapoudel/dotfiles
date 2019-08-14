@@ -39,6 +39,7 @@
     "**/tmp": true,
     "**/apigen": false,
     "**/vendor": true,
+    "**/db_data": true,
     "**/node_modules": true,
     "**/__pycache__": true
   },
