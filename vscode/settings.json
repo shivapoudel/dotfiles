@@ -53,6 +53,7 @@
   "workbench.tips.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "GitHub Plus",
+  "workbench.editor.splitSizing": "split",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.renderIndentGuides": "onHover",
 
