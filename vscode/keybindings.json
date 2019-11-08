@@ -44,23 +44,12 @@
     "key": "ctrl+shift+q",
     "command": "workbench.action.toggleMaximizedPanel"
   },
-  { "key": "ctrl+up",
-    "command": "workbench.action.terminal.scrollToPreviousCommand",
-    "when": "terminalFocus"
+  {
+    "key": "ctrl+m e",
+    "command": "workbench.action.focusLastEditorGroup"
   },
   {
-    "key": "ctrl+down",
-    "command": "workbench.action.terminal.scrollToNextCommand",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+shift+up",
-    "command": "workbench.action.terminal.selectToPreviousCommand",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+shift+down",
-    "command": "workbench.action.terminal.selectToNextCommand",
-    "when": "terminalFocus"
+    "key": "ctrl+m t",
+    "command": "workbench.action.terminal.toggleTerminal"
   }
 ]
