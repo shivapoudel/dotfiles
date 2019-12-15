@@ -94,7 +94,8 @@
       }
     ]
   },
+  "intelephense.diagnostics.undefinedConstants": false,
   "vscodeWorkspaceSwitcher.paths": [
 	"C:\\Users\\shivapoudel\\OneDrive\\Workspace"
-  ]
+  ],
 }
