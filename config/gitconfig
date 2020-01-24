@@ -6,6 +6,7 @@
 [diff]
 	ignoreSubmodules = dirty
 [core]
+	longpaths = true
 	autocrlf = false
 	pager = less -x1,5
 	editor = code --wait
