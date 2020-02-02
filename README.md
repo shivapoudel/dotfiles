@@ -50,9 +50,10 @@ meta/configs/
 ├── git.yaml
 ├── npm.yaml
 ├── bash.yaml
+├── local.yaml
 └── vscode.yaml
 ```
 
 # License
 
-Copyright (c) 2019 Shiva Poudel | Licensed under [MIT license](http://shivapoudel.mit-license.org)
+Copyright (c) 2020 Shiva Poudel | Licensed under [MIT license](http://shivapoudel.mit-license.org)

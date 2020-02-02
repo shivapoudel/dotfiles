@@ -58,4 +58,4 @@
 		git branch | grep -v "master" | grep -v ^* | xargs git branch -D;\
 	}; f"
 [winUpdater]
-	recentlySeenVersion = 2.24.1.windows.2
+	recentlySeenVersion = 2.25.0.windows.1
