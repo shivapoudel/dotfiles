@@ -76,6 +76,7 @@
   "git.detectSubmodules": true,
   "git.enableSmartCommit": true,
   "javascript.format.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -97,5 +98,5 @@
   "intelephense.diagnostics.undefinedConstants": false,
   "vscodeWorkspaceSwitcher.paths": [
 	"C:\\Users\\shivapoudel\\OneDrive\\Workspace"
-  ],
+  ]
 }
