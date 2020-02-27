@@ -81,6 +81,7 @@
 	},
 	"php.suggest.basic": false,
 	"php.validate.enable": false,
+	"phpSniffer.autoDetect": true,
 	"phpSniffer.standard": "WordPress",
 	"php-docblocker.returnVoid": false,
 	"php-docblocker.useShortNames": true,
