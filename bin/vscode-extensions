@@ -30,11 +30,11 @@ code --install-extension neilbrayfield.php-docblocker
 code --install-extension PKief.material-icon-theme
 code --install-extension ryannaddy.laravel-artisan
 code --install-extension sadesyllas.vscode-workspace-switcher
-code --install-extension thenikso.github-plus-theme
 code --install-extension TomasHubelbauer.vscode-markdown-table-format
 code --install-extension Tyriar.lorem-ipsum
 code --install-extension WakaTime.vscode-wakatime
-code --install-extension wk-j.save-and-run
+code --install-extension wongjn.php-sniffer
 code --install-extension wordpresstoolbox.wordpress-toolbox
 code --install-extension wwm.better-align
 code --install-extension yogensia.searchwpdocs
+code --install-extension zhuangtongfa.material-theme
