@@ -10,7 +10,6 @@
 	"editor.snippetSuggestions": "top",
 	"editor.renderLineHighlight": "all",
 	"editor.renderWhitespace": "selection",
-	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.cursorSmoothCaretAnimation": true,
 	"editor.fontFamily": "'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace",
 	"editor.fontLigatures": true,
