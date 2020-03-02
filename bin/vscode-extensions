@@ -7,7 +7,6 @@
 code --install-extension bmewburn.vscode-intelephense-client
 code --install-extension bradgashler.htmltagwrap
 code --install-extension christian-kohler.path-intellisense
-code --install-extension claudiosanches.woocommerce
 code --install-extension claudiosanches.wpcs-whitelist-flags
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dsznajder.es7-react-js-snippets
@@ -21,6 +20,7 @@ code --install-extension GitHub.vscode-pull-request-github
 code --install-extension GrapeCity.gc-excelviewer
 code --install-extension humao.rest-client
 code --install-extension joelday.docthis
+code --install-extension johnbillion.vscode-wordpress-hooks
 code --install-extension MehediDracula.php-namespace-resolver
 code --install-extension mitchdenny.ecdc
 code --install-extension mrmlnc.vscode-duplicate
@@ -33,7 +33,6 @@ code --install-extension TomasHubelbauer.vscode-markdown-table-format
 code --install-extension Tyriar.lorem-ipsum
 code --install-extension WakaTime.vscode-wakatime
 code --install-extension wongjn.php-sniffer
-code --install-extension wordpresstoolbox.wordpress-toolbox
 code --install-extension wwm.better-align
 code --install-extension yogensia.searchwpdocs
 code --install-extension zhuangtongfa.material-theme
