@@ -8,6 +8,7 @@ code --install-extension bmewburn.vscode-intelephense-client
 code --install-extension bradgashler.htmltagwrap
 code --install-extension christian-kohler.path-intellisense
 code --install-extension claudiosanches.wpcs-whitelist-flags
+code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension EditorConfig.EditorConfig
