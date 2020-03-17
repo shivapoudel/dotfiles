@@ -15,7 +15,7 @@
 	"editor.fontLigatures": true,
 	"editor.fontSize": 12,
 	"editor.rulers": [
-		80
+		80, 90
 	],
 	"[php]": {
 		"editor.formatOnSave": true,
