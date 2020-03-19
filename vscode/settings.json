@@ -85,6 +85,7 @@
 	"phpSniffer.standard": "WordPress",
 	"php-docblocker.returnVoid": false,
 	"php-docblocker.useShortNames": true,
+	"todo-tree.tree.showScanModeButton": false,
 	"intelephense.diagnostics.undefinedConstants": false,
 	"vscodeWorkspaceSwitcher.paths": [
 		"C:\\Users\\shivapoudel\\OneDrive\\Workspace"
