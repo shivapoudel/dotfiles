@@ -24,7 +24,6 @@ code --install-extension Gruntfuggly.todo-tree
 code --install-extension humao.rest-client
 code --install-extension joelday.docthis
 code --install-extension johnbillion.vscode-wordpress-hooks
-code --install-extension liximomo.sftp
 code --install-extension MehediDracula.php-namespace-resolver
 code --install-extension mhutchie.git-graph
 code --install-extension mitchdenny.ecdc
@@ -32,12 +31,11 @@ code --install-extension mrmlnc.vscode-duplicate
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension neilbrayfield.php-docblocker
 code --install-extension PKief.material-icon-theme
-code --install-extension pnp.polacode
-code --install-extension ryannaddy.laravel-artisan
 code --install-extension sadesyllas.vscode-workspace-switcher
 code --install-extension TomasHubelbauer.vscode-markdown-table-format
 code --install-extension Tyriar.lorem-ipsum
 code --install-extension WakaTime.vscode-wakatime
+code --install-extension wix.vscode-import-cost
 code --install-extension wongjn.php-sniffer
 code --install-extension wwm.better-align
 code --install-extension yogensia.searchwpdocs
