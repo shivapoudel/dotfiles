@@ -15,7 +15,8 @@
 	"editor.fontLigatures": true,
 	"editor.fontSize": 12,
 	"editor.rulers": [
-		80, 90
+		80,
+		90
 	],
 	"[php]": {
 		"editor.formatOnSave": true,
@@ -26,6 +27,9 @@
 	},
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"[javascript]": {
 		"editor.formatOnSave": false,
