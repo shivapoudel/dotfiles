@@ -9,6 +9,11 @@
 		"body": ["echo '<pre>' . print_r( ${1:arg}, true ) . '</pre>';"],
 		"description": "Prints human-readable information about a variable."
 	},
+	"Translate single string": {
+		"prefix": "evf_translate",
+		"body": ["evf_string_translation(${1:form_id}, ${2:field_id}, ${3:field_val}, ${4:field_context} )"],
+		"description": "Snippet for translation within Everest Forms."
+	},
 	"PHPCS: Ignore block": {
 		"prefix": "phpcs_ignore_block",
 		"body": [
