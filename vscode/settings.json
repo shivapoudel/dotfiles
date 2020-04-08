@@ -3,6 +3,7 @@
 	"editor.tabSize": 4,
 	"editor.wordWrap": "off",
 	"editor.useTabStops": true,
+	"editor.renameOnType": true,
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
 	"editor.detectIndentation": false,
