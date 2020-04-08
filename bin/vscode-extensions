@@ -24,10 +24,13 @@ code --install-extension Gruntfuggly.todo-tree
 code --install-extension humao.rest-client
 code --install-extension joelday.docthis
 code --install-extension johnbillion.vscode-wordpress-hooks
+code --install-extension karigari.chat
 code --install-extension MehediDracula.php-namespace-resolver
 code --install-extension mhutchie.git-graph
 code --install-extension mitchdenny.ecdc
 code --install-extension mrmlnc.vscode-duplicate
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension neilbrayfield.php-docblocker
 code --install-extension PKief.material-icon-theme
