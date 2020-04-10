@@ -14,13 +14,13 @@ code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
+code --install-extension ExodiusStudios.comment-anchors
 code --install-extension fayras.simple-new-file
 code --install-extension felixfbecker.php-debug
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension GrapeCity.gc-excelviewer
-code --install-extension Gruntfuggly.todo-tree
 code --install-extension humao.rest-client
 code --install-extension joelday.docthis
 code --install-extension johnbillion.vscode-wordpress-hooks
