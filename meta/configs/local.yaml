@@ -1,3 +1,4 @@
 - link:
     "~/AppData/Roaming/Local/settings-new-site-defaults.json": local/settings-new-site-defaults.json
     "~/AppData/Local/Programs/Local/resources/extraResources/lightning-services/php-7.3.5+3/bin/win32/php.ini": local/conf/php.ini
+    "~/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/bin/wp": local/bin/wp
