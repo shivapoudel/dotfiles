@@ -57,5 +57,3 @@
 	delete-all-branches-force = "!f(){\
 		git branch | grep -v "master" | grep -v ^* | xargs git branch -D;\
 	}; f"
-[winUpdater]
-	recentlySeenVersion = 2.25.0.windows.1
