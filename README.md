@@ -28,11 +28,6 @@ For installing node depedencies:
 npm i -g eslint jshint sass-lint doctoc
 ```
 
-For updating submodule remotely:
-```bash
-git submodule update --remote
-```
-
 You can run these installation commands safely multiple times, if you think that helps with better installation.
 
 ## Contents
@@ -49,7 +44,6 @@ meta/profiles/
 meta/configs/
 ├── git.yaml
 ├── npm.yaml
-├── bash.yaml
 ├── local.yaml
 └── vscode.yaml
 ```

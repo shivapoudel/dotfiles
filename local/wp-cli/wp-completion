@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+curl -sL https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-completion.bash -o ~/.wp-cli/wp-completion.bash
