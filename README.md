@@ -23,11 +23,6 @@ For installing single configurations:
 # see meta/configs/ for available configurations
 ```
 
-For installing node depedencies:
-```bash
-npm i -g eslint jshint sass-lint doctoc
-```
-
 You can run these installation commands safely multiple times, if you think that helps with better installation.
 
 ## Contents
