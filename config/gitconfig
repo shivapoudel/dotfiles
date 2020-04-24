@@ -3,8 +3,6 @@
 	email = dev.shivapoudel@gmail.com
 [push]
 	default = matching
-[diff]
-	ignoreSubmodules = dirty
 [core]
 	autocrlf = false
 	protectNTFS = true
