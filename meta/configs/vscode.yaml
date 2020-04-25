@@ -4,4 +4,4 @@
     "~/AppData/Roaming/Code/User/keybindings.json": vscode/keybindings.json
 
 - shell:
-  - [bash ./bin/vscode-extensions, Installing VS Code Extensions]
+  - [bash ./vscode/bin/vscode-extensions, Installing VS Code Extensions]
