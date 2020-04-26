@@ -40,6 +40,7 @@ meta/configs/
 ├── git.yaml
 ├── npm.yaml
 ├── local.yaml
+├── shell.yaml
 └── vscode.yaml
 ```
 

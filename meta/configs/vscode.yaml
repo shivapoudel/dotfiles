@@ -4,4 +4,8 @@
     "~/AppData/Roaming/Code/User/keybindings.json": vscode/keybindings.json
 
 - shell:
-  - [bash ./vscode/bin/vscode-extensions, Installing VS Code Extensions]
+    - command: "bash -c './vscode/bin/vscode-extensions'"
+      description: Installing VS Code extensions.
+      stdin: true
+      stdout: true
+      stderr: true

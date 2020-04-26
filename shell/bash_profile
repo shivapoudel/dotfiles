@@ -1,0 +1,1 @@
+test -f ~/.wp-cli/wp-completion.bash && source ~/.wp-cli/wp-completion.bash

@@ -1,4 +1,0 @@
-# Bash completion script
-if [ -f ~/.wp-cli/wp-completion.bash ]; then
-	source ~/.wp-cli/wp-completion.bash
-fi
