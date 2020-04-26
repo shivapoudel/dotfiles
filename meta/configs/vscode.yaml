@@ -6,6 +6,5 @@
 - shell:
     - command: "bash -c './vscode/bin/vscode-extensions'"
       description: Installing VS Code extensions.
-      stdin: true
       stdout: true
       stderr: true
