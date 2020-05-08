@@ -4,7 +4,7 @@ This repository contains machine-specific configuration to accompany my dotfiles
 
 ## Installation
 
-__Please Note:__ Run VS Code as administrator and select Git bash as default shell.
+__Please Note:__ Run Git Bash terminal as administrator before executing below commands.
 
 ```bash
 git clone --recursive git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
