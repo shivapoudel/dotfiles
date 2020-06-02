@@ -46,4 +46,6 @@ meta/configs/
 
 # License
 
-Copyright (c) 2020 Shiva Poudel | Licensed under [MIT license](http://shivapoudel.mit-license.org)
+Copyright (c) Shiva Poudel. All rights reserved.
+
+Licensed under the [MIT](http://shivapoudel.mit-license.org) license.

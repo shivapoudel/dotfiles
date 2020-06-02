@@ -1,20 +1,15 @@
-# editorconfig.org
-
 root = true
 
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 4
-tab_width = 4
-indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
+indent_style = tab
 
-[*.txt]
-trim_trailing_whitespace = false
-
-[*.{md,json,yml,yaml}]
-trim_trailing_whitespace = false
+[*.{json,yml,yaml}]
 indent_style = space
 indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
