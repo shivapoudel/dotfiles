@@ -39,9 +39,7 @@ meta/profiles/
 meta/configs/
 ├── git.yaml
 ├── npm.yaml
-├── local.yaml
-├── shell.yaml
-└── vscode.yaml
+└── shell.yaml
 ```
 
 # License
