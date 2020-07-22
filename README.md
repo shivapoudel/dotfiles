@@ -2,44 +2,15 @@
 
 This repository contains machine-specific configuration to accompany my dotfiles.
 
-## Installation
+### Installation
 
 __Please Note:__ Run Git Bash terminal as administrator before executing below commands.
 
 ```bash
-git clone --recursive git@github.com:shivapoudel/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-```
-
-For installing a predefined profile:
-```bash
-~/.dotfiles$ ./install-profile <profile> [<configs...>]
-# see meta/profiles/ for available profiles
-```
-
-For installing single configurations:
-```bash
-~/.dotfiles$ ./install-standalone <configs...>
-# see meta/configs/ for available configurations
-```
-
-You can run these installation commands safely multiple times, if you think that helps with better installation.
-
-## Contents
-
-### Profiles
-
-```
-meta/profiles/
-└── workstation
-```
-### Dotbot configurations
-
-```
-meta/configs/
-├── git.yaml
-├── npm.yaml
-└── shell.yaml
+npm config set tmp ~/.tmp-npm # Setup NPM tmp config.
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles-installer/master/rsync/install.sh)" # Setup rsync
+powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles-installer/master/git/install.ps1)" # Setup git
+powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles-installer/master/local/install.ps1)" # Setup local
 ```
 
 # License

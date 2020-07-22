@@ -1,13 +1,13 @@
 [user]
 	name = Shiva Poudel
 	email = dev.shivapoudel@gmail.com
+[push]
+	default = matching
 [core]
 	autocrlf = false
 	pager = less -x1,5
 	editor = code --wait
 	excludesfile = ~/.gitignore_global
-[push]
-	default = matching
 [fetch]
 	prune = true
 [color]
