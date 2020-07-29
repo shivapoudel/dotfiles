@@ -1,8 +1,6 @@
 [user]
 	name = Shiva Poudel
 	email = dev.shivapoudel@gmail.com
-[push]
-	default = matching
 [init]
 	defaultBranch = main
 [core]
@@ -10,8 +8,12 @@
 	pager = less -x1,5
 	editor = code --wait
 	excludesfile = ~/.gitignore_global
+[push]
+	default = matching
 [fetch]
 	prune = true
+[clean]
+	requireForce = false
 [color]
 	# ui = true is a superset of all the more specific color options
 	# as documented at http://book.git-scm.com/5_customizing_git.html
@@ -21,8 +23,12 @@
 	# Defaults to false.
 	ui = auto
 	# diff = auto
-	# status = auto
 	# branch = auto
+	# status = auto
+[color "branch"]
+	local = yellow
+	remote = green
+	current = cyan
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
@@ -32,27 +38,17 @@
 	added = yellow
 	changed = green
 	untracked = cyan
-[color "branch"]
-	local = yellow
-	remote = green
-	current = cyan
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 [alias]
-	# Remove untracked files.
-	untrack = !git clean -f -d
-	# Find the closest tagname and generate list of all commits as changelog.
-	generate-changelog = "!f(){\
-		git log $(git describe --abbrev=0 --tags)..HEAD --no-merges --pretty=format:'* %s';\
-	}; f"
-	# Delete all local branches but master and the current one, only if they are fully merged with master.
+	# Delete all local branches except main and the current one.
 	delete-all-branches = "!f(){\
-		git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
+		git branch | grep -v "main" | grep -v ^* | xargs git branch -d;\
 	}; f"
-	# Delete all local branches but master and the current one.
+	# Forcefully delete all local branches except main and the current one.
 	delete-all-branches-force = "!f(){\
-		git branch | grep -v "master" | grep -v ^* | xargs git branch -D;\
+		git branch | grep -v "main" | grep -v ^* | xargs git branch -D;\
 	}; f"
