@@ -8,6 +8,7 @@ __Please Note:__ Run Git Bash terminal as administrator before executing below c
 
 ```bash
 npm config set tmp ~/.tmp-npm # Setup NPM tmp config.
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/master/zip/install.sh)" # Setup zip
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/master/rsync/install.sh)" # Setup rsync
 powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/master/git/install.ps1)" # Setup git
 powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/master/local/install.ps1)" # Setup local
