@@ -8,6 +8,7 @@
 	pager = less -x1,5
 	editor = code --wait
 	excludesfile = ~/.gitignore_global
+	ignorecase = false
 [push]
 	default = matching
 [fetch]
@@ -44,11 +45,14 @@
 	process = git-lfs filter-process
 	required = true
 [alias]
-	# Delete all local branches except main and the current one.
+	# Delete all local branches but the primary branch and the current one,
+	# only if they are fully merged with primary branch.
 	delete-all-branches = "!f(){\
-		git branch | grep -v "main" | grep -v ^* | xargs git branch -d;\
+		local BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@');\
+		git branch | grep -v "${BRANCH}" | grep -v ^* | xargs git branch -d;\
 	}; f"
-	# Forcefully delete all local branches except main and the current one.
+	# Delete all local branches but the primary branch and the current one.
 	delete-all-branches-force = "!f(){\
-		git branch | grep -v "main" | grep -v ^* | xargs git branch -D;\
+		local BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@');\
+		git branch | grep -v "${BRANCH}" | grep -v ^* | xargs git branch -D;\
 	}; f"
