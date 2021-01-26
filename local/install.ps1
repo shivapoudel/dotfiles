@@ -1,5 +1,5 @@
 $path          = [Environment]::GetEnvironmentVariable('Path', 'User')
-$php_path      = [Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-7.4.1+14\bin\win64;"
+$php_path      = [Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-8.0.0+1\bin\win64;"
 $wp_cli_path   = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\win32;"
 $composer_path = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\win32;"
 
