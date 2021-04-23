@@ -20,6 +20,11 @@
 *.tar
 *.zip
 
+# Language files #
+##################
+*.po~
+*.mo~
+
 # Logs and databases #
 ######################
 *.log
