@@ -1,7 +1,7 @@
 $path          = [Environment]::GetEnvironmentVariable('Path', 'User')
 $php_path      = [Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-8.0.0+2\bin\win64;"
-$wp_cli_path   = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\win32;"
-$composer_path = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\win32;"
+$wp_cli_path   = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\posix;"
+$composer_path = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\posix;"
 
 # Set environment variables.
 [System.Environment]::SetEnvironmentVariable('Path', $path + $php_path + $wp_cli_path + $composer_path, 'User')
