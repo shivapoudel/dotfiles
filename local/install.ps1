@@ -1,12 +1,23 @@
-$path          = [Environment]::GetEnvironmentVariable('Path', 'User')
-$vendor        = [Environment]::GetFolderPath('ApplicationData') + "\Composer\vendor\bin;"
-$php_path      = [Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-8.0.0+2\bin\win64;"
-$wp_cli_path   = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\posix;"
-$composer_path = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\posix;"
+$persistedPaths  = [Environment]::GetEnvironmentVariable('Path', 'User') -split ';'
+$additionalPaths = @(
+	[Environment]::GetFolderPath('ApplicationData') + "\Composer\vendor\bin"
+	[Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-8.0.0+2\bin\win64"
+	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\posix"
+	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\posix"
+)
 
 # Set environment variables.
-[System.Environment]::SetEnvironmentVariable('Path', $path + $vendor + $php_path + $wp_cli_path + $composer_path, 'User')
+Foreach ($Path in $additionalPaths) {
+	if ($persistedPaths -notcontains $Path) {
+		$persistedPaths = $persistedPaths + $Path | where { $_ }
+		Write-Host "Added Path: '$Path'"
+		[Environment]::SetEnvironmentVariable('Path', $persistedPaths -join ';', 'User')
+	} else {
+		Write-Host "Exist Path: '$Path'"
+	}
+}
 
-# Download PHP Configuration File.
-$php_config = join-path -path $php_path.trim(';') -childpath 'php.ini'
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/shivapoudel/dotfiles/master/local/conf/php.ini" -OutFile $php_config
+# Setup PHP configuration file.
+$phpConfig = join-path -path $additionalPaths[1] -childpath 'php.ini'
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/shivapoudel/dotfiles/master/local/conf/php.ini" -OutFile $phpConfig
+Write-Host "PHP Config: '$phpConfig'"
