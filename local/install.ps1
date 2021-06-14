@@ -1,5 +1,5 @@
 $path          = [Environment]::GetEnvironmentVariable('Path', 'User')
-$vendor        = [Environment]::GetFolderPath('ApplicationData') + "\Roaming\Composer\vendor\bin;"
+$vendor        = [Environment]::GetFolderPath('ApplicationData') + "\Composer\vendor\bin;"
 $php_path      = [Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-8.0.0+2\bin\win64;"
 $wp_cli_path   = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\posix;"
 $composer_path = [Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\posix;"
