@@ -2,6 +2,7 @@ $persistedPaths  = [Environment]::GetEnvironmentVariable('Path', 'User') -split 
 $additionalPaths = @(
 	[Environment]::GetFolderPath('ApplicationData') + "\Composer\vendor\bin"
 	[Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-8.0.0+2\bin\win64"
+	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\rsync\win32"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\posix"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\posix"
 )

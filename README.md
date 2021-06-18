@@ -8,7 +8,6 @@ This repository contains machine-specific configuration to accompany my dotfiles
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/zip/install.sh)" # Setup zip
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/rsync/install.sh)" # Setup rsync
 powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/git/install.ps1)" # Setup git
 powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/local/install.ps1)" # Setup local
 ```
