@@ -17,7 +17,10 @@ Foreach ($Path in $additionalPaths) {
 	}
 }
 
+# Set NPM script-shell to bash.
+npm config set script-shell "C:\\Program Files\\Git\\bin\\bash.exe"
+
 # Setup PHP configuration file.
 $phpConfig = join-path -path $additionalPaths[1] -childpath 'php.ini'
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/shivapoudel/dotfiles/master/local/conf/php.ini" -OutFile $phpConfig
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/shivapoudel/dotfiles/main/local/conf/php.ini" -OutFile $phpConfig
 Write-Host "PHP Config: '$phpConfig'"
