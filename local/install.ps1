@@ -1,3 +1,4 @@
+$faviconsPaths   = [Environment]::GetFolderPath('UserProfile') + "\OneDrive\Workspace\icons\favicons\"
 $persistedPaths  = [Environment]::GetEnvironmentVariable('Path', 'User') -split ';'
 $additionalPaths = @(
 	[Environment]::GetFolderPath('ApplicationData') + "\Composer\vendor\bin"
@@ -6,6 +7,20 @@ $additionalPaths = @(
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\posix"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\posix"
 )
+
+# Setup sites favicon.
+Get-ChildItem -Path $faviconsPaths -Recurse -Include *.ico | %{
+	$site = [System.IO.Path]::GetFileNameWithoutExtension($_.fullname)
+	$dest = [Environment]::GetFolderPath('MyComputer') + "D:\htdocs\$site\app\public\"
+	$icon = Join-Path -Path $dest -ChildPath "favicon.ico"
+
+    if (Test-Path -Path $icon) {
+		Write-Host "Added Favicon: '$site'"
+		Copy-Item -Path $_.fullname -Destination $icon -Force -Container
+    } else {
+		Write-Host "Doesn't exist site: '$site'"
+	}
+}
 
 # Set environment variables.
 Foreach ($Path in $additionalPaths) {
