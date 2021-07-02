@@ -1,8 +1,7 @@
-
-# Ignore dotenv files
+# dotenv files
 .env
 
-# Ignore packages files
+# Packages files
 *.7z
 *.csv
 *.dat
@@ -14,7 +13,7 @@
 *.tar
 *.zip
 
-# Ignore compiled source
+# Compiled source
 *.com
 *.class
 *.dll
@@ -24,40 +23,40 @@
 *.so
 *.pid
 
-# Ignore logs and databases
+# Logs and databases
 *.log
 *.sql
 *.sqlite
 
-# Ignore OS generated files
-*~
+# Binary gettext files
+*.po~
+*.mo~
+
+# IDE related specific files
+.idea
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/launch-*.json
+!.vscode/settings.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Composer vendor directories
+vendor/
+
+# Node dependency directories
+node_modules/
+
+# Test/build tools related files
+.phpcs.xml
+.phpunit-watcher.yml
+.phpunit.result.cache
+
+# Operating system specific files
 ._*
 .DS_Store
 .Trashes
 .Spotlight-V100
 Thumbs.db
 ehthumbs.db
-
-# Ignore IDE specific files
-.idea
-.vscode/*
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/settings.json
-!.vscode/extensions.json
-*.code-workspace
-
-# Ignore binary gettext files
-*.po~
-*.mo~
-
-# Ignore node dependency directories
-node_modules/
-
-# Ignore Composer vendor directories
-vendor/
-
-# Ignore PHPCS/PHPUnit configurations
-.phpcs.xml
-.phpunit-watcher.yml
-.phpunit.result.cache
