@@ -1,17 +1,11 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
+# Ignore dotenv files
+.env
+
+# Ignore packages files
 *.7z
+*.csv
+*.dat
 *.dmg
 *.gz
 *.iso
@@ -20,23 +14,50 @@
 *.tar
 *.zip
 
-# Language files #
-##################
-*.po~
-*.mo~
+# Ignore compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.seed
+*.so
+*.pid
 
-# Logs and databases #
-######################
+# Ignore logs and databases
 *.log
 *.sql
 *.sqlite
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
+# Ignore OS generated files
+*~
 ._*
-.Spotlight-V100
+.DS_Store
 .Trashes
-ehthumbs.db
+.Spotlight-V100
 Thumbs.db
+ehthumbs.db
+
+# Ignore IDE specific files
+.idea
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Ignore binary gettext files
+*.po~
+*.mo~
+
+# Ignore node dependency directories
+node_modules/
+
+# Ignore Composer vendor directories
+vendor/
+
+# Ignore PHPCS/PHPUnit configurations
+.phpcs.xml
+.phpunit-watcher.yml
+.phpunit.result.cache
