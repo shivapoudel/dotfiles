@@ -14,10 +14,10 @@ Get-ChildItem -Path $faviconsPaths -Recurse -Include *.ico | %{
 	$dest = [Environment]::GetFolderPath('MyComputer') + "D:\htdocs\$site\app\public\"
 	$icon = Join-Path -Path $dest -ChildPath "favicon.ico"
 
-    if (Test-Path -Path $icon) {
+	if (Test-Path -Path $icon) {
 		Write-Host "Added Favicon: '$site'"
 		Copy-Item -Path $_.fullname -Destination $icon -Force -Container
-    } else {
+	} else {
 		Write-Host "Doesn't exist site: '$site'"
 	}
 }
@@ -31,6 +31,11 @@ Foreach ($Path in $additionalPaths) {
 	} else {
 		Write-Host "Exist Path: '$Path'"
 	}
+}
+
+# Set MySQL default port.
+if (-Not [Environment]::GetEnvironmentVariable('MYSQL_DEFAULT_PORT')) {
+	[Environment]::SetEnvironmentVariable('MYSQL_DEFAULT_PORT', '10017', 'User')
 }
 
 # Set NPM script-shell to bash.
