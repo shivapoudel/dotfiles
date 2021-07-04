@@ -6,6 +6,7 @@ $additionalPaths = @(
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\rsync\win32"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\posix"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\posix"
+	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\lightning-services\mysql-8.0.16+6\bin\win64\bin"
 )
 
 # Setup sites favicon.
