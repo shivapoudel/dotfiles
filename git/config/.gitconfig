@@ -5,10 +5,10 @@
 	defaultBranch = main
 [core]
 	autocrlf = false
+	ignorecase = false
 	pager = less -x1,5
 	editor = code --wait
 	excludesfile = ~/.gitignore_global
-	ignorecase = false
 [push]
 	default = matching
 [fetch]
