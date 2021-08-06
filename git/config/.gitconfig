@@ -36,9 +36,10 @@
 	old = red bold
 	new = green bold
 [color "status"]
-	added = yellow
-	changed = green
+	added = green bold
+	changed = red bold strike
 	untracked = cyan
+	branch = yellow black bold ul
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
