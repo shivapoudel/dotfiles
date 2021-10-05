@@ -15,7 +15,7 @@ Get-ChildItem -Path $faviconsPaths -Recurse -Include *.ico | %{
 	$dest = [Environment]::GetFolderPath('MyComputer') + "D:\htdocs\$site\app\public\"
 	$icon = Join-Path -Path $dest -ChildPath "favicon.ico"
 
-	if (Test-Path -Path $icon) {
+	if (Test-Path -Path $dest) {
 		Write-Host "Added Favicon: '$site'"
 		Copy-Item -Path $_.fullname -Destination $icon -Force -Container
 	} else {
