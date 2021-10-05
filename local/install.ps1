@@ -36,7 +36,7 @@ Foreach ($Path in $additionalPaths) {
 
 # Set MySQL default port.
 if (-Not [Environment]::GetEnvironmentVariable('MYSQL_DEFAULT_PORT')) {
-	[Environment]::SetEnvironmentVariable('MYSQL_DEFAULT_PORT', '10017', 'User')
+	[Environment]::SetEnvironmentVariable('MYSQL_DEFAULT_PORT', '10004', 'User')
 }
 
 # Set NPM script-shell to bash.
