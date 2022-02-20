@@ -36,9 +36,13 @@
 .idea
 .vscode/*
 !.vscode/launch-*.json
-!.vscode/settings.json
+!.vscode/settings-*.json
 !.vscode/extensions.json
 *.code-workspace
+
+# REST Client specific files
+*.rest
+*.http
 
 # Composer vendor directories
 vendor/
