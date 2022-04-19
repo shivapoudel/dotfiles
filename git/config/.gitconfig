@@ -7,7 +7,7 @@
 	autocrlf = false
 	ignorecase = false
 	pager = less -x1,5
-	editor = code --wait
+	editor = \"C:\\Users\\shiva\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
 	excludesfile = ~/.gitignore_global
 [push]
 	default = matching
