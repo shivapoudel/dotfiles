@@ -34,9 +34,10 @@
 
 # IDE related specific files
 .idea
-.vscode/*
+.vscode/
+!.vscode/launch.json
 !.vscode/launch-*.json
-!.vscode/settings-*.json
+!.vscode/settings.json
 !.vscode/extensions.json
 *.code-workspace
 
