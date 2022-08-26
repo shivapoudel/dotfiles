@@ -45,6 +45,10 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[merge]
+	tool = code
+[mergetool "code"]
+	cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [alias]
 	amend = commit --amend --no-edit
 	# Amend commit and force push into current branch.
