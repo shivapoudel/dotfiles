@@ -4,8 +4,8 @@ $additionalPaths = @(
 	[Environment]::GetFolderPath('ApplicationData') + "\Composer\vendor\bin"
 	[Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-7.4.1+18\bin\win64"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\rsync\win32"
-	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\posix"
-	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\posix"
+	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\win32"
+	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\win32"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\lightning-services\mysql-8.0.16+6\bin\win64\bin"
 )
 
