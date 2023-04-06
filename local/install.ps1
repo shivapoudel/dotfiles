@@ -1,3 +1,4 @@
+$UserName        = [Environment]::UserName
 $faviconsPaths   = [Environment]::GetFolderPath('UserProfile') + "\OneDrive\Workspace\icons\favicons\"
 $persistedPaths  = [Environment]::GetEnvironmentVariable('Path', 'User') -split ';'
 $additionalPaths = @(
@@ -45,4 +46,14 @@ npm config set script-shell "C:\\Program Files\\Git\\bin\\bash.exe"
 # Setup PHP configuration file.
 $phpConfig = join-path -path $additionalPaths[1] -childpath 'php.ini'
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/shivapoudel/dotfiles/main/local/conf/php.ini" -OutFile $phpConfig
+
+# Read the content of the config file.
+$configContent = Get-Content -Path $phpConfig
+
+# Replace the username using regular expressions.
+$updatedConfig = $configContent -replace "/shiva", "/$UserName"
+
+# Write the updated content back to the file.
+$updatedConfig | Set-Content -Path $phpConfig
+
 Write-Host "PHP Config: '$phpConfig'"

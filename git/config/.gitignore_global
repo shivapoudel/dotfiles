@@ -45,9 +45,6 @@
 *.rest
 *.http
 
-# Composer vendor directories
-vendor/
-
 # Node dependency directories
 node_modules/
 
