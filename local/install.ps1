@@ -3,7 +3,7 @@ $faviconsPaths   = [Environment]::GetFolderPath('UserProfile') + "\OneDrive\Work
 $persistedPaths  = [Environment]::GetEnvironmentVariable('Path', 'User') -split ';'
 $additionalPaths = @(
 	[Environment]::GetFolderPath('ApplicationData') + "\Composer\vendor\bin"
-	[Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-7.4.30+5\bin\win64"
+	[Environment]::GetFolderPath('ApplicationData') + "\Local\lightning-services\php-8.1.23+0\bin\win64"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\rsync\win32"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\wp-cli\win32"
 	[Environment]::GetFolderPath('LocalApplicationData') + "\Programs\Local\resources\extraResources\bin\composer\win32"
