@@ -41,10 +41,10 @@
 	untracked = cyan
 	branch = yellow black bold ul
 [filter "lfs"]
-	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+	clean = git-lfs clean -- %f
 [merge]
 	tool = code
 [mergetool "code"]
