@@ -43,17 +43,25 @@ if (-Not [Environment]::GetEnvironmentVariable('MYSQL_DEFAULT_PORT')) {
 # Set NPM script-shell to bash.
 npm config set script-shell "C:\\Program Files\\Git\\bin\\bash.exe"
 
-# Setup PHP configuration file.
-$phpConfig = join-path -path $additionalPaths[1] -childpath 'php.ini'
+# Define PHP config path.
+$phpConfig = Join-Path -Path $additionalPaths[1] -ChildPath 'php.ini'
+
+# Ensure php.ini file exists
+if (!(Test-Path -Path $phpConfig)) {
+    New-Item -ItemType File -Path $phpConfig -Force | Out-Null
+    Write-Host "Created a new php.ini file at: $phpConfig"
+}
+
+# Download the php.ini file (if needed)
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/shivapoudel/dotfiles/main/local/conf/php.ini" -OutFile $phpConfig
 
 # Read the content of the config file.
-$configContent = Get-Content -Path $phpConfig
+$configContent = Get-Content -Path $phpConfig -Raw
 
 # Replace the username using regular expressions.
-$updatedConfig = $configContent -replace "/shiva", "/$UserName"
+$updatedConfig = $configContent -replace "/shiva", "/$($UserName)"
 
 # Write the updated content back to the file.
-$updatedConfig | Set-Content -Path $phpConfig
+$updatedConfig | Set-Content -Path $phpConfig -Encoding UTF8
 
-Write-Host "PHP Config: '$phpConfig'"
+Write-Host "PHP Config updated: '$phpConfig'"
