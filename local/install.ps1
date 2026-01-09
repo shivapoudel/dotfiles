@@ -1,4 +1,3 @@
-$UserName        = [Environment]::UserName
 $faviconsPaths   = [Environment]::GetFolderPath('UserProfile') + "\OneDrive\Workspace\icons\favicons\"
 $persistedPaths  = [Environment]::GetEnvironmentVariable('Path', 'User') -split ';'
 $additionalPaths = @(
@@ -54,14 +53,5 @@ if (!(Test-Path -Path $phpConfig)) {
 
 # Download the php.ini file (if needed)
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/shivapoudel/dotfiles/main/local/conf/php.ini" -OutFile $phpConfig
-
-# Read the content of the config file.
-$configContent = Get-Content -Path $phpConfig -Raw
-
-# Replace the username using regular expressions.
-$updatedConfig = $configContent -replace "/shiva", "/$($UserName)"
-
-# Write the updated content back to the file.
-$updatedConfig | Set-Content -Path $phpConfig -Encoding UTF8
 
 Write-Host "PHP Config updated: '$phpConfig'"
