@@ -4,51 +4,39 @@
 [init]
 	defaultBranch = main
 [core]
-	autocrlf = false
-	ignorecase = false
+	autocrlf = input
 	pager = less -F -X
 	editor = \"C:\\Users\\shiva\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
 	excludesfile = ~/.gitignore_global
-[push]
-	default = matching
+[pull]
+	rebase = false
 [fetch]
 	prune = true
-[clean]
-	requireForce = false
+[merge]
+	tool = code
+[mergetool "code"]
+	cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [color]
-	# ui = true is a superset of all the more specific color options
-	# as documented at http://book.git-scm.com/5_customizing_git.html
-	# When set to always, always use colors in all git commands which are capable of colored output.
-	# When false, never. When set to true or auto, use colors only when the output is to the terminal.
-	# When more specific variables of color.* are set, they always take precedence over this setting.
-	# Defaults to false.
 	ui = auto
-	# diff = auto
-	# branch = auto
-	# status = auto
 [color "branch"]
-	local = yellow
+	local = yellow bold
 	remote = green
-	current = cyan
+	current = cyan bold
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
 	old = red bold
 	new = green bold
 [color "status"]
-	added = green bold
-	changed = red bold strike
+	added = green
+	changed = red bold
 	untracked = cyan
-	branch = yellow black bold ul
+	branch = yellow black bold
 [filter "lfs"]
+	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-	clean = git-lfs clean -- %f
-[merge]
-	tool = code
-[mergetool "code"]
-	cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [alias]
 	amend = commit --amend --no-edit
 	# Amend commit and force push into current branch.
