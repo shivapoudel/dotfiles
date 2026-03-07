@@ -73,14 +73,47 @@ EXIT;
 
 **Expected output (WSL/Ubuntu):**
 ```
-+------+-----------+-------------+
-| user | host      | plugin      |
-+------+-----------+-------------+
-| root | localhost | auth_socket |
-+------+-----------+-------------+
++------+-----------+-----------------------+
+| user | host      | plugin                |
++------+-----------+-----------------------+
+| root | localhost | auth_socket           |
++------+-----------+-----------------------+
 ```
 
-### 2. Secure MySQL Installation
+### 2. Configure Root Authentication (WSL/Ubuntu only)
+
+If root uses `caching_sha2_password` or `mysql_native_password`, configure it to use socket authentication. If already using `auth_socket`, skip this step.
+
+Connect to MySQL:
+
+```bash
+sudo mysql -p
+```
+
+Set root to use socket authentication:
+
+```sql
+-- Check current root authentication
+SELECT user, host, plugin FROM mysql.user WHERE user = 'root';
+
+-- If not using auth_socket, set it now
+ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+
+FLUSH PRIVILEGES;
+EXIT;
+```
+
+Verify root uses socket authentication:
+
+```bash
+# This should work (no password needed)
+sudo mysql -e "SELECT USER(), CURRENT_USER();"
+
+# This should NOT work
+mysql -u root -p
+```
+
+### 3. Secure MySQL Installation
 
 **macOS:**
 ```bash
@@ -100,7 +133,7 @@ sudo mysql_secure_installation
 ```
 
 - VALIDATE PASSWORD component: Your choice
-- Set root password: Skip (keep socket auth recommended)
+- Set root password: Skip/No (already using socket auth)
 - Remove anonymous users: Yes
 - Disallow root login remotely: Yes
 - Remove test database: Yes
