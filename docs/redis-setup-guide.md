@@ -104,7 +104,7 @@ Or download from: [https://redis.io/insight/](https://redis.io/insight/)
 2. Click **"Add Redis Database"**
 3. Click **"Connection Settings"**
 4. Enter connection details:
-   - **Database Alias**: `Local Redis`
+   - **Database Alias**: `Local Redis Server`
    - **Host**: `localhost` or `127.0.0.1`
    - **Port**: `6379` (default)
    - **Username**: `appuser`
