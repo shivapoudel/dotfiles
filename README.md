@@ -13,6 +13,7 @@ powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/
 
 ### Setup Guides
 
+- [MySQL Setup Guide](./docs/mysql-setup-guide.md)
 - [Redis Setup Guide](./docs/redis-setup-guide.md)
 
 # License
