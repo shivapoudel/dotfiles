@@ -20,7 +20,7 @@ brew install mysql@8.0
 brew link mysql@8.0 --force
 
 # Start MySQL service
-brew services start mysql
+brew services start mysql@8.0
 ```
 
 ### WSL/Ubuntu (APT)
@@ -193,7 +193,7 @@ log_error=/var/log/mysql/error.log
 
 **macOS:**
 ```bash
-brew services restart mysql
+brew services restart mysql@8.0
 ```
 
 **WSL/Ubuntu:**
@@ -211,7 +211,7 @@ sudo systemctl restart mysql
 mysql -u root -p -e "SELECT USER(), CURRENT_USER();"
 
 # Test appuser
-mysql -u appuser -pPassword@123 -e "SELECT USER(), CURRENT_USER();"
+mysql -u appuser -p -e "SELECT USER(), CURRENT_USER();"
 ```
 
 **WSL/Ubuntu:**
@@ -220,7 +220,7 @@ mysql -u appuser -pPassword@123 -e "SELECT USER(), CURRENT_USER();"
 sudo mysql -e "SELECT USER(), CURRENT_USER();"
 
 # Test appuser
-mysql -u appuser -pPassword@123 -e "SELECT USER(), CURRENT_USER();"
+mysql -u appuser -p -e "SELECT USER(), CURRENT_USER();"
 ```
 
 ---
@@ -282,10 +282,10 @@ MySQL Workbench provides:
 
 ```bash
 # Service management
-brew services start mysql
-brew services stop mysql
-brew services restart mysql
-brew services info mysql
+brew services start mysql@8.0
+brew services stop mysql@8.0
+brew services restart mysql@8.0
+brew services info mysql@8.0
 
 # Connect
 mysql -u root -p
