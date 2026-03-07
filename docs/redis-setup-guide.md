@@ -1,61 +1,120 @@
-# Redis Installation & Configuration Guide (macOS)
+# Redis Installation & Configuration Guide
 
 ## Prerequisites
 
 - Terminal access
-- macOS with Homebrew installed
+- **macOS**: Homebrew installed
+- **WSL/Ubuntu**: Ubuntu 20.04+ on WSL2
+
+---
 
 ## Installation
 
-### 1. Install Redis
+### macOS (Homebrew)
 
 ```bash
+# Install Redis
 brew install redis
+
+# Start Redis service
+brew services start redis
 ```
 
-This installs Redis and automatically sets up the service to run on system startup.
+### WSL/Ubuntu (APT)
 
-### 2. Configure Redis
+```bash
+# Update package index
+sudo apt update
 
-Open the Redis configuration file:
+# Install Redis
+sudo apt install redis-server -y
 
+# Start and enable Redis service
+sudo systemctl start redis-server
+sudo systemctl enable redis-server
+```
+
+---
+
+## Configure Redis
+
+### Edit Configuration File
+
+**macOS:**
 ```bash
 code /opt/homebrew/etc/redis.conf
 ```
 
+**WSL/Ubuntu:**
+```bash
+sudo code /etc/redis/redis.conf
+```
+
+### Configuration Settings
+
 Add or modify the following settings:
 
+**macOS** (`/opt/homebrew/etc/redis.conf`):
 ```conf
 # Network
-tcp-backlog 128                            # Max number of pending connections
+tcp-backlog 128
 
 # Security
-aclfile /opt/homebrew/etc/redis/users.acl  # ACL file location
+aclfile /opt/homebrew/etc/redis/users.acl
 
 # Memory Management
-maxmemory 512mb                            # Maximum memory limit
-maxmemory-policy allkeys-lfu               # Eviction policy (Least Frequently Used)
+maxmemory 512mb
+maxmemory-policy allkeys-lfu
+```
+
+**WSL/Ubuntu** (`/etc/redis/redis.conf`):
+```conf
+# Network
+tcp-backlog 128
+
+# Process Management
+supervised systemd
+
+# Security
+aclfile /etc/redis/users.acl
+
+# Memory Management
+maxmemory 512mb
+maxmemory-policy allkeys-lfu
 ```
 
 **Configuration Explained:**
 - `tcp-backlog`: Controls the queue size for pending connections
+- `supervised systemd`: (Ubuntu only) Tells Redis to integrate with systemd
 - `aclfile`: Points to the Access Control List file for user authentication
 - `maxmemory`: Prevents Redis from consuming unlimited memory
 - `maxmemory-policy allkeys-lfu`: When memory limit is reached, evicts least frequently used keys
 
-### 3. Set Up Access Control (ACL)
+---
 
-Create the ACL directory and file:
+## Set Up Access Control (ACL)
 
+### Create ACL Directory and File
+
+**macOS:**
 ```bash
-# Create directory for ACL file.
+# Create directory
 mkdir -p /opt/homebrew/etc/redis
 
-# Create ACL file with application user and disabled default user.
+# Create ACL file
 cat > /opt/homebrew/etc/redis/users.acl << 'EOF'
 user appuser on >Password@123 ~* +@all
 user default off
 EOF
+```
+
+**WSL/Ubuntu:**
+```bash
+# Create ACL file
+sudo bash -c 'cat > /etc/redis/users.acl << "EOF"
+user appuser on >Password@123 ~* +@all
+user default off
+EOF'
 ```
 
 **ACL Rules Explained:**
@@ -65,8 +124,11 @@ EOF
 - `+@all`: Grants permission to all commands
 - `user default off`: Disables the default user for security
 
-### 4. Restart Redis and Save Configuration
+---
 
+## Restart Redis and Save Configuration
+
+**macOS:**
 ```bash
 # Restart Redis service
 brew services restart redis
@@ -75,40 +137,60 @@ brew services restart redis
 redis-cli --no-auth-warning --user appuser --pass Password@123 ACL SAVE
 ```
 
-### 5. Verify Installation
+**WSL/Ubuntu:**
+```bash
+# Restart Redis service
+sudo systemctl restart redis-server
+
+# Connect and save ACL configuration permanently
+redis-cli --no-auth-warning --user appuser --pass Password@123 ACL SAVE
+```
+
+---
+
+## Verify Installation
 
 ```bash
 # Check Redis status
+# macOS:
 brew services info redis
 
-# Test connection
-redis-cli --no-auth-warning --user appuser --pass Password@123 ping
+# WSL/Ubuntu:
+sudo systemctl status redis-server
+
+# Test connection (both platforms)
+redis-cli --user appuser --pass Password@123 ping
 # Should return: PONG
 ```
 
-## Redis Insight (GUI Tool)
+---
 
-For easier data visualization and management, install **Redis Insight**:
+## Redis Insight (GUI Tool)
 
 ### Installation
 
+**macOS:**
 ```bash
 brew install --cask redis-insight
 ```
 
-Or download from: [https://redis.io/insight/](https://redis.io/insight/)
+**WSL/Ubuntu:**
 
-### Connecting to Your Local Redis
+Download from: [https://redis.io/insight/](https://redis.io/insight/)
+
+Or install on Windows and connect to WSL Redis using WSL IP address.
+
+### Connecting to Local Redis
 
 1. Open Redis Insight
 2. Click **"Add Redis Database"**
 3. Click **"Connection Settings"**
 4. Enter connection details:
-   - **Database Alias**: `Local Redis Server`
-   - **Host**: `localhost` or `127.0.0.1`
+   - **Database Alias**: `Local Redis` (or any name you prefer)
+   - **Host**: `localhost` or `127.0.0.1` (or WSL IP for Windows connection)
    - **Port**: `6379` (default)
    - **Username**: `appuser`
-   - **Password**: `Password@123` (change this to a secure password!)
+   - **Password**: `Password@123`
 5. Click **"Add Redis Database"**
 
 Redis Insight provides:
@@ -118,7 +200,11 @@ Redis Insight provides:
 - Query profiling and slowlog analysis
 - Memory analysis tools
 
+---
+
 ## File Locations Reference
+
+### macOS
 
 | Purpose | Path |
 |---------|------|
@@ -129,19 +215,28 @@ Redis Insight provides:
 | Log file | `/opt/homebrew/var/log/redis.log` |
 | PID file | `/opt/homebrew/var/run/redis.pid` |
 
+### WSL/Ubuntu
+
+| Purpose | Path |
+|---------|------|
+| Main configuration | `/etc/redis/redis.conf` |
+| ACL users file | `/etc/redis/users.acl` |
+| Data directory | `/var/lib/redis/` |
+| RDB snapshot | `/var/lib/redis/dump.rdb` |
+| Log file | `/var/log/redis/redis-server.log` |
+| PID file | `/var/run/redis/redis-server.pid` |
+
+---
+
 ## Common Commands
 
+### macOS
+
 ```bash
-# Start Redis
+# Service management
 brew services start redis
-
-# Stop Redis
 brew services stop redis
-
-# Restart Redis
 brew services restart redis
-
-# Check status
 brew services info redis
 
 # Connect with authentication
@@ -151,22 +246,70 @@ redis-cli --user appuser --pass Password@123
 tail -f /opt/homebrew/var/log/redis.log
 
 # Flush all data (use with caution!)
-redis-cli --no-auth-warning --user appuser --pass Password@123 FLUSHALL
+redis-cli --user appuser --pass Password@123 FLUSHALL
 ```
+
+### WSL/Ubuntu
+
+```bash
+# Service management
+sudo systemctl start redis-server
+sudo systemctl stop redis-server
+sudo systemctl restart redis-server
+sudo systemctl status redis-server
+
+# Connect with authentication
+redis-cli --user appuser --pass Password@123
+
+# View logs
+sudo tail -f /var/log/redis/redis-server.log
+
+# Flush all data (use with caution!)
+redis-cli --user appuser --pass Password@123 FLUSHALL
+```
+
+---
+
+## WSL-Specific Notes
+
+**Accessing Redis from Windows:**
+
+1. Edit `/etc/redis/redis.conf`:
+   ```conf
+   bind 0.0.0.0
+   ```
+
+2. Restart Redis:
+   ```bash
+   sudo systemctl restart redis-server
+   ```
+
+3. Find WSL IP:
+   ```bash
+   hostname -I
+   ```
+
+4. Connect from Windows using this IP and `appuser` credentials
+
+---
 
 ## Security Best Practices
 
 ⚠️ **Important Security Notes:**
 
-1. **Change the default password** (`Password@123`) to a strong, unique password.
-2. **Never commit** ACL files or passwords to version control.
-3. Consider using environment variables for passwords in production.
-4. Restrict network access if Redis is exposed beyond localhost.
-5. Regularly update Redis to get security patches.
+1. **Change the default password** (`Password@123`) to a strong, unique password
+2. **Never commit** ACL files or passwords to version control
+3. Consider using environment variables for passwords in production
+4. Restrict network access if Redis is exposed beyond localhost
+5. Regularly update Redis to get security patches
+
+---
 
 ## Troubleshooting
 
 ### Redis won't start
+
+**macOS:**
 ```bash
 # Check for errors in the log
 cat /opt/homebrew/var/log/redis.log
@@ -175,23 +318,43 @@ cat /opt/homebrew/var/log/redis.log
 redis-server /opt/homebrew/etc/redis.conf --test-memory 1
 ```
 
+**WSL/Ubuntu:**
+```bash
+# Check for errors in the log
+sudo cat /var/log/redis/redis-server.log
+
+# Check service status
+sudo systemctl status redis-server
+
+# Restart service
+sudo systemctl restart redis-server
+```
+
 ### Authentication issues
+
 ```bash
 # Verify ACL file exists and is readable
+# macOS:
 cat /opt/homebrew/etc/redis/users.acl
+
+# WSL/Ubuntu:
+sudo cat /etc/redis/users.acl
 
 # Check current ACL users
 redis-cli --no-auth-warning --user appuser --pass Password@123 ACL LIST
 ```
 
 ### Memory issues
+
 ```bash
-# Check current memory usage
-redis-cli --no-auth-warning --user appuser --pass Password@123 INFO memory
+# Check current memory usage (both platforms)
+redis-cli --user appuser --pass Password@123 INFO memory
 
 # View memory stats in human-readable format
-redis-cli --no-auth-warning --user appuser --pass Password@123 --stat
+redis-cli --user appuser --pass Password@123 --stat
 ```
+
+---
 
 ## Additional Resources
 
