@@ -11,6 +11,10 @@ powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/
 powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/local/install.ps1)" # Setup local
 ```
 
+### Setup Guides
+
+- [Redis Setup Guide](./redis-setup-guide.md)
+
 # License
 
 Copyright (c) Shiva Poudel. All rights reserved.
