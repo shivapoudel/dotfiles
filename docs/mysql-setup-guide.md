@@ -115,29 +115,29 @@ mysql -u root -p
 
 ### 3. Secure MySQL Installation
 
+Run the secure installation wizard:
+
 **macOS:**
 ```bash
 mysql_secure_installation
 ```
-
-- Enter current password: Press Enter (blank)
-- Set root password: Yes → Choose strong password
-- Remove anonymous users: Yes
-- Disallow root login remotely: Yes
-- Remove test database: Yes
-- Reload privilege tables: Yes
 
 **WSL/Ubuntu:**
 ```bash
 sudo mysql_secure_installation
 ```
 
-- VALIDATE PASSWORD component: Your choice
-- Set root password: Skip/No (already using socket auth)
-- Remove anonymous users: Yes
-- Disallow root login remotely: Yes
-- Remove test database: Yes
-- Reload privilege tables: Yes
+**Answer the prompts:**
+
+- **VALIDATE PASSWORD component:** Your choice (both platforms)
+- **Enter password for user root:** Your password if set (macOS only)
+- **Set root password:**
+  - macOS: Yes → Choose strong password
+  - WSL/Ubuntu: No (using socket auth)
+- **Remove anonymous users:** Yes
+- **Disallow root login remotely:** Yes
+- **Remove test database:** Yes
+- **Reload privilege tables:** Yes
 
 ---
 
