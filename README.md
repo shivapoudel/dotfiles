@@ -13,7 +13,7 @@ powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/
 
 ### Setup Guides
 
-- [Redis Setup Guide](./redis-setup-guide.md)
+- [Redis Setup Guide](./docs/redis-setup-guide.md)
 
 # License
 
