@@ -42,12 +42,12 @@ sudo systemctl enable redis-server
 
 **macOS:**
 ```bash
-code /opt/homebrew/etc/redis.conf
+nano /opt/homebrew/etc/redis.conf
 ```
 
 **WSL/Ubuntu:**
 ```bash
-sudo code /etc/redis/redis.conf
+sudo nano /etc/redis/redis.conf
 ```
 
 ### Configuration Settings
@@ -204,27 +204,14 @@ Redis Insight provides:
 
 ## File Locations Reference
 
-### macOS
-
-| Purpose | Path |
-|---------|------|
-| Main configuration | `/opt/homebrew/etc/redis.conf` |
-| ACL users file | `/opt/homebrew/etc/redis/users.acl` |
-| Data directory | `/opt/homebrew/var/db/redis/` |
-| RDB snapshot | `/opt/homebrew/var/db/redis/dump.rdb` |
-| Log file | `/opt/homebrew/var/log/redis.log` |
-| PID file | `/opt/homebrew/var/run/redis.pid` |
-
-### WSL/Ubuntu
-
-| Purpose | Path |
-|---------|------|
-| Main configuration | `/etc/redis/redis.conf` |
-| ACL users file | `/etc/redis/users.acl` |
-| Data directory | `/var/lib/redis/` |
-| RDB snapshot | `/var/lib/redis/dump.rdb` |
-| Log file | `/var/log/redis/redis-server.log` |
-| PID file | `/var/run/redis/redis-server.pid` |
+| Purpose | macOS | WSL/Ubuntu |
+|---------|-------|------------|
+| Main configuration | `/opt/homebrew/etc/redis.conf` | `/etc/redis/redis.conf` |
+| ACL users file | `/opt/homebrew/etc/redis/users.acl` | `/etc/redis/users.acl` |
+| Data directory | `/opt/homebrew/var/db/redis/` | `/var/lib/redis/` |
+| RDB snapshot | `/opt/homebrew/var/db/redis/dump.rdb` | `/var/lib/redis/dump.rdb` |
+| Log file | `/opt/homebrew/var/log/redis.log` | `/var/log/redis/redis-server.log` |
+| PID file | `/opt/homebrew/var/run/redis.pid` | `/var/run/redis/redis-server.pid` |
 
 ---
 

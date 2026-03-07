@@ -148,12 +148,12 @@ EXIT;
 
 **macOS:**
 ```bash
-code /opt/homebrew/etc/my.cnf
+nano /opt/homebrew/etc/my.cnf
 ```
 
 **WSL/Ubuntu:**
 ```bash
-sudo code /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 
 ### Recommended Settings
@@ -265,26 +265,14 @@ MySQL Workbench provides:
 
 ## File Locations Reference
 
-### macOS
-
-| Purpose | Path |
-|---------|------|
-| Main configuration | `/opt/homebrew/etc/my.cnf` |
-| Data directory | `/opt/homebrew/var/mysql/` |
-| Error log | `/opt/homebrew/var/mysql/error.log` |
-| Binary logs | `/opt/homebrew/var/mysql/mysql-bin.*` |
-| Socket file | `/tmp/mysql.sock` |
-| PID file | `/opt/homebrew/var/mysql/*.pid` |
-
-### WSL/Ubuntu
-
-| Purpose | Path |
-|---------|------|
-| Main configuration | `/etc/mysql/mysql.conf.d/mysqld.cnf` |
-| Data directory | `/var/lib/mysql/` |
-| Error log | `/var/log/mysql/error.log` |
-| Socket file | `/var/run/mysqld/mysqld.sock` |
-| PID file | `/var/run/mysqld/mysqld.pid` |
+| Purpose | macOS | WSL/Ubuntu |
+|---------|-------|------------|
+| Main configuration | `/opt/homebrew/etc/my.cnf` | `/etc/mysql/mysql.conf.d/mysqld.cnf` |
+| Data directory | `/opt/homebrew/var/mysql/` | `/var/lib/mysql/` |
+| Error log | `/opt/homebrew/var/mysql/error.log` | `/var/log/mysql/error.log` |
+| Socket file | `/tmp/mysql.sock` | `/var/run/mysqld/mysqld.sock` |
+| Binary logs | `/opt/homebrew/var/mysql/mysql-bin.*` | N/A (enable in config) |
+| PID file | `/opt/homebrew/var/mysql/*.pid` | `/var/run/mysqld/mysqld.pid` |
 
 ---
 
