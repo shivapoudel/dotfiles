@@ -312,7 +312,7 @@ mysql -u root -p
 mysql -u appuser -p
 
 # Logs
-tail -f /opt/homebrew/var/mysql/error.log
+tail -f /opt/homebrew/var/mysql/$(hostname).err
 ```
 
 ### WSL/Ubuntu
