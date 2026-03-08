@@ -269,7 +269,7 @@ Or install on Windows and connect to WSL MySQL using WSL IP address.
    - **Hostname**: `127.0.0.1` (or WSL IP for Windows connection)
    - **Port**: `3306`
    - **Username**: `appuser`
-   - **Password**: Click "Store in Keychain" and enter `Password@123`
+   - **Password**: Click "Store in Keychain/Vault" and enter `Password@123`
 4. Click **"Test Connection"**
 5. Click **"OK"**
 

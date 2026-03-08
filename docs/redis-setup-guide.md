@@ -159,7 +159,7 @@ brew services info redis
 sudo systemctl status redis-server
 
 # Test connection (both platforms)
-redis-cli --user appuser --pass Password@123 ping
+redis-cli --no-auth-warning --user appuser --pass Password@123 ping
 # Should return: PONG
 ```
 
@@ -227,13 +227,13 @@ brew services restart redis
 brew services info redis
 
 # Connect with authentication
-redis-cli --user appuser --pass Password@123
+redis-cli --no-auth-warning --user appuser --pass Password@123
 
 # View logs
 tail -f /opt/homebrew/var/log/redis.log
 
 # Flush all data (use with caution!)
-redis-cli --user appuser --pass Password@123 FLUSHALL
+redis-cli --no-auth-warning --user appuser --pass Password@123 FLUSHALL
 ```
 
 ### WSL/Ubuntu
@@ -246,13 +246,13 @@ sudo systemctl restart redis-server
 sudo systemctl status redis-server
 
 # Connect with authentication
-redis-cli --user appuser --pass Password@123
+redis-cli --no-auth-warning --user appuser --pass Password@123
 
 # View logs
 sudo tail -f /var/log/redis/redis-server.log
 
 # Flush all data (use with caution!)
-redis-cli --user appuser --pass Password@123 FLUSHALL
+redis-cli --no-auth-warning --user appuser --pass Password@123 FLUSHALL
 ```
 
 ---
@@ -335,10 +335,10 @@ redis-cli --no-auth-warning --user appuser --pass Password@123 ACL LIST
 
 ```bash
 # Check current memory usage (both platforms)
-redis-cli --user appuser --pass Password@123 INFO memory
+redis-cli --no-auth-warning --user appuser --pass Password@123 INFO memory
 
 # View memory stats in human-readable format
-redis-cli --user appuser --pass Password@123 --stat
+redis-cli --no-auth-warning --user appuser --pass Password@123 --stat
 ```
 
 ---
