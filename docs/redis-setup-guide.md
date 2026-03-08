@@ -69,9 +69,6 @@ maxmemory-policy allkeys-lfu
 
 **WSL/Ubuntu** (`/etc/redis/redis.conf`):
 ```conf
-# Network
-tcp-backlog 128
-
 # Process Management
 supervised systemd
 
