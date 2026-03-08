@@ -193,33 +193,20 @@ sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
 **macOS** (`/opt/homebrew/etc/my.cnf`):
 ```ini
-[mysqld]
-character-set-server=utf8mb4
-collation-server=utf8mb4_unicode_ci
-max_connections=200
-connect_timeout=10
 innodb_buffer_pool_size=512M
 innodb_log_file_size=128M
-local_infile=0
-skip-symbolic-links
-log_bin=mysql-bin
 binlog_expire_logs_seconds=604800
-log_error=/opt/homebrew/var/mysql/error.log
-
-[client]
-default-character-set=utf8mb4
+max_binlog_size=512M
 ```
 
-**WSL/Ubuntu** (`/etc/mysql/mysql.conf.d/mysqld.cnf` - add to `[mysqld]` section):
+**WSL/Ubuntu** (`/etc/mysql/mysql.conf.d/mysqld.cnf`):
 ```ini
-character-set-server=utf8mb4
-collation-server=utf8mb4_unicode_ci
-max_connections=200
+[mysqld]
 bind-address=0.0.0.0
+mysqlx-bind-address = 127.0.0.1
 innodb_buffer_pool_size=512M
 innodb_log_file_size=128M
-local_infile=0
-log_error=/var/log/mysql/error.log
+max_binlog_size=512M
 ```
 
 ### Restart MySQL
