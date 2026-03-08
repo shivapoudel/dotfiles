@@ -203,7 +203,7 @@ max_binlog_size=512M
 ```ini
 [mysqld]
 bind-address=0.0.0.0
-mysqlx-bind-address = 127.0.0.1
+mysqlx-bind-address = 0.0.0.0
 innodb_buffer_pool_size=512M
 innodb_log_file_size=128M
 max_binlog_size=512M
