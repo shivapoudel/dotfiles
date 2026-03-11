@@ -1,0 +1,6 @@
+bind 127.0.0.1 -::1
+tcp-backlog 128
+daemonize no
+pidfile /opt/homebrew/var/run/redis.pid
+dir /opt/homebrew/var/db/redis/
+aclfile /opt/homebrew/etc/redis/users.acl
