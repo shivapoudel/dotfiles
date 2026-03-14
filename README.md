@@ -11,9 +11,9 @@ powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/
 powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/local/install.ps1)" # Setup local
 ```
 
-### Herd
+### Laravel Herd
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/herd/setup-herd-shims.sh) # Setup Herd shims
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/herd/setup-herd-shims.sh)"
 ```
 
 ### Setup Guides
