@@ -11,6 +11,11 @@ powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/
 powershell "$(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/local/install.ps1)" # Setup local
 ```
 
+### Herd
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/shivapoudel/dotfiles/main/herd/setup-herd-shims.sh) # Setup Herd shims
+```
+
 ### Setup Guides
 
 - [MySQL Setup Guide](./docs/mysql-setup-guide.md)
